@@ -7,16 +7,17 @@
 function display_upcoming_events( ){
     echo '<div class="upcoming_events">';
 
-    // Display 8 items
-    display_upcoming_event( '10/5', 'Customer Development', 'http://plancast.com/p/2dmm', 'The 2nd Decade' );
-    display_upcoming_event( '10/13', 'Anything but Work', 'http://anythingbutwork.eventbrite.com', 'Innovation 2010 Pre-Party' );
-    display_upcoming_event( '10/14', 'Innovation 2010', 'http://web.me.com/masstlcwebmaster/MassTLC_2010/Welcome.html', '(Expert)' );
-    display_upcoming_event( '10/21', 'Do More Faster Tour', 'http://plancast.com/p/27ol', 'TechStars Lessons to accelerate your Startup' );
-    display_upcoming_event( '10/21', 'MassChallenge', 'http://masschallenge.org/resources/events/masschallenge-final-ceremony', 'Final Ceremony' );
-    display_upcoming_event( '10/22-24', 'ShutUp &amp; StartUp Weekend', 'http://microsoftcambridge.com/Events/ShutUpStartUpWeekend/tabid/528/Default.aspx', 'Startup Weekend for Students' );
-    display_upcoming_event( '10/28', 'Lean Startup Meetup', 'http://www.meetup.com/Lean-Startup-Circle-Boston/calendar/13910126/', 'TBD' );
-    display_upcoming_event( '10/29', 'NH Conference for Women', 'http://www.wiwnh.com/events/NH%20Conference%20for%20Women%20full%20sheet%20flyer.pdf', 'Inspiration, Motivation &amp; Trasnformation' );
-    
+    // Display 7 items
+    display_upcoming_event( '1/11', 'Tech Tuesday', 'http://www.eventbrite.com/event/1069483855', 'Join your fellow geeks' );
+    display_upcoming_event( '1/13', 'Ultra Light Startups', 'http://uls-boston.eventbrite.com/', 'PR for Startups' );
+    display_upcoming_event( '1/19', 'TechStars', 'http://www.techstars.org/techstars-for-a-day/', 'TechStars for a Day' );
+    display_upcoming_event( '1/27', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/calendar/pjmvpypcbkc/', 'Stay tuned...' );
+    display_upcoming_event( '2/5', 'Developers Developers Developers...', 'http://microsoftcambridge.com/Events/DevelopersDevelopersDevelopersDevelopers/tabid/575/Default.aspx', 'Getting students excited about development' );
+    display_upcoming_event( '1/17', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/calendar/15848501/', 'Brant Cooper, Peter Vlaskovitz' );
+    display_upcoming_event( '1/18-1/20', 'Lean Startup Machine', 'http://sf.theleanstartupmachine.com/', 'Startup Weekend, Lean Startup style' );
+
+    // See more at Plancast
+    echo '<p><strong>&#0187; &#0187; &#0187; See more on <a href="http://plancast.com/HackerChick" target="_blank">Plancast</a> &#0171; &#0171; &#0171;</strong></p>';
     echo '</div>';
 }
 
@@ -50,21 +51,21 @@ function shorten_text($text, $length) {
 
 function display_favorites( $qty ){
     echo '<div class="favorites">';
-    display_favorite( 77, 'Plane Crashes, Software Failures &amp; Other Human Errors' );
-    display_favorite( 81, 'Agile Leadership: Methodology Ain\'t Enough' );
-    display_favorite( 74, 'Scrum: A Framework for (Finding) Failure' );
-    display_favorite( 70, 'Why You Should LetYour Developers Surf' );
-    display_favorite( 75, 'Beautiful Teams' );
-    display_favorite( 78, 'Where Do The Testers Go in Agile?' );
-    display_favorite( 69, 'Deep Agile: Ya Know, Like Teenage Sex' );
-    display_favorite( 58, 'How Managers Get So Stupid' );
-    display_favorite( 55, 'That Agile Stuff Will Never Work' );
-    display_favorite( 71, 'The (Schedule) Games Managers Play' );
+    display_favorite( 'Lean Startup 101 for Developers', '2010/10/lean-startup-101-for-devs-presentation.html' );
+    display_favorite( 'Be a Rockstar', '2010/12/be-a-rockstar.html' );
+    display_favorite( 'How to Create a Kick Ass Team', '2010/09/how-to-create-a-kick-ass-team.html' );
+    display_favorite( 'Build Your Startup from the Heart', '2010/05/build-your-startup-from-the-heart.html' );
+    display_favorite( 'Evangelist Chick: Preachin\' the Good Word to Devs', '2010/03/evangelist-chick-preachin-good-word-to_19.html' );
+    display_favorite( 'Are We Agile Yet?', '2010/02/are-we-agile-yet.html' );
+    display_favorite( 'Just Do It: A Quick Intro to Agile\'s Technical Practices', '2010/02/just-do-it-quick-intro-to-agiles.html' );
+    display_favorite( 'Agile Leadership: Methodology Ain\'t Enough', '2009/09/agile-leadership-methodology-ain-enough.html' );
+    display_favorite( 'Plane Crashes, Software Failures, and other Human Errors', '2009/05/plane-crashes-software-failures-and.html' );
+    display_favorite( 'Beautiful Teams', '2009/04/beautiful-teams.html' );
     echo '</div>';
 }
 
-function display_favorite( $postID, $title ){
-    echo '<a href="' . get_option('home') . '/index.php?p=' . $postID .'"><p>' . $title . '</p></a>';
+function display_favorite( $title, $postLink ){
+    echo '<a href="' . get_option('home') . '/' . $postLink .'"><p>' . $title . '</p></a>';
 }
 
 function display_top_commentors( ){

@@ -38,12 +38,16 @@ function HidePicture(id) {
     else if (document.all) document.all[''+id+''].style.visibility = "hidden";
     else if (document.getElementById) document.getElementById(''+id+'').style.visibility = "hidden";
 
-    if( id != 'mouseover-default' ) timer = setTimeout("ShowPicture( 'mouseover-default' )", 2000 );
+    try{
+        if( id != 'mouseover-default' ) timer = setTimeout("ShowPicture( 'mouseover-default' )", 2000 );
+    }catch (error){}
 }
 
 function CancelDefaultMouseoverDisplay(id){
     clearTimeout( timer );
-    if( id != 'mouseover-default' ) HidePicture( 'mouseover-default' );
+    try{
+	if( id != 'mouseover-default' ) HidePicture( 'mouseover-default' );
+    }catch (error){}
 }
 
 //-->

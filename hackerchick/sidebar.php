@@ -32,6 +32,13 @@
     </div>
     <!-- FACEBOOK: END -->
 
+    <!-- FAVORITES -->
+    <div class="item">
+    <p><img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/favorites.png" width="176" height="27" alt="Favorites"/>
+    <?php display_favorites( 10 ); ?></p>
+    </div>
+    <!-- FAVORITES: END -->
+
     <!-- TAGS -->
     <div class="item">
     <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/topics.png" width="125" height="27" alt="topics"/>
@@ -46,13 +53,6 @@
     <?php get_search_form(); ?>
     </div>
     <!-- SEARCH: END -->
-
-    <!-- FAVORITES -->
-    <div class="item">
-    <p><img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/favorites.png" width="176" height="27" alt="Favorites"/>
-    <?php display_favorites( 10 ); ?></p>
-    </div>
-    <!-- FAVORITES: END -->
     
 
     <!-- BADGES -->

@@ -48,7 +48,7 @@
 	    <?php $count++; ?>
 	    
 	    <!-- DISPLAY LARGE PREVIEWS -->
-	    <?php if( $count <= 3 ) { ?>
+	    <?php if( $count <= 4 ) { ?>
                 <!-- POST -->
 		<div class="post">
 		<p class="posttitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
