@@ -8,16 +8,21 @@ function display_upcoming_events( ){
     echo '<div class="upcoming_events">';
 
     // Display 7 items
-    display_upcoming_event( '1/11', 'Tech Tuesday', 'http://www.eventbrite.com/event/1069483855', 'Join your fellow geeks' );
-    display_upcoming_event( '1/13', 'Ultra Light Startups', 'http://uls-boston.eventbrite.com/', 'PR for Startups' );
-    display_upcoming_event( '1/19', 'TechStars', 'http://www.techstars.org/techstars-for-a-day/', 'TechStars for a Day' );
-    display_upcoming_event( '1/27', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/calendar/pjmvpypcbkc/', 'Stay tuned...' );
     display_upcoming_event( '2/5', 'Developers Developers Developers...', 'http://microsoftcambridge.com/Events/DevelopersDevelopersDevelopersDevelopers/tabid/575/Default.aspx', 'Getting students excited about development' );
-    display_upcoming_event( '1/17', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/calendar/15848501/', 'Brant Cooper, Peter Vlaskovitz' );
-    display_upcoming_event( '1/18-1/20', 'Lean Startup Machine', 'http://sf.theleanstartupmachine.com/', 'Startup Weekend, Lean Startup style' );
+    display_upcoming_event( '2/15', 'Boston Tech Meetup', 'http://www.meetup.com/newtech-73/calendar/16103046/', 'Whats new &amp; cool in the local startup scene' );
+    display_upcoming_event( '2/17', 'Boston BizSpark', 'http://webinno29.eventbrite.com/', 'TBD' );
+    display_upcoming_event( '2/24', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/calendar/15848501/', 'Brant Cooper, Peter Vlaskovitz' );
+    display_upcoming_event( '2/25-27', 'Lean Startup Machine', 'http://boston.theleanstartupmachine.com/', 'Startup Weekend, Lean Startup style' );
+    display_upcoming_event( '3/7', 'Web Inno', 'http://webinno29.eventbrite.com/', 'Startup Showcase' );
+    display_upcoming_event( '3/11-15', 'South by Southwest', 'http://sxsw.com/interactive', 'SXSW Interactive' );
 
+	/*
+    display_upcoming_event( '3/18', 'DigiGirlz Day', 'http://www.microsoft.com/about/diversity/en/us/programs/digigirlz/digiGirlzday.aspx', 'High Tech for High School Girlz' );
+    display_upcoming_event( '3/24', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/events/15948053/', 'TBD' );
+    */
+    
     // See more at Plancast
-    echo '<p><strong>&#0187; &#0187; &#0187; See more on <a href="http://plancast.com/HackerChick" target="_blank">Plancast</a> &#0171; &#0171; &#0171;</strong></p>';
+    echo '<p><strong>&#0187; &#0187; &#0187; <a href="http://plancast.com/HackerChick" target="_blank">See more on Plancast</a> &#0171; &#0171; &#0171;</strong></p>';
     echo '</div>';
 }
 
