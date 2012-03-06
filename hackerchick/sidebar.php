@@ -57,8 +57,8 @@
 
     <!-- BADGES -->
     <div class="item" id="badges">
-    <div id="badge-adp"><a href="http://www.sqe.com/AgileDevPracticesWest/Concurrent/Default.aspx?Day=Wednesday#AW8" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-agiledevpractices.png" width="59" height="73" alt="Agile Development Practices" border="0"/></a></div>
-    <div id="badge-agile10"><a href="http://agile2010.agilealliance.org/testing.html#5514" title="Better Story Testing through Programmer-Tester Pairing" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-agile2010.png" width="110" height="66" alt="Agile 2010" border="0"/></a></div>
+    <div id="badge-topblogs"><a href="http://agilescout.com/top-agile-blogs-200/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/agile-top-200-blogs.png" width="100" height="94" alt="Top 200 Agile Blogs" border="0"/></a></div>
+    <div id="badge-agile11"><a href="http://program2011.agilealliance.org/event/bbbd058a97e906ab96d85c0aa712a751" title="Lean Startup: How Development Looks Different When You're Changing the World" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-agile2011.png" width="150" height="68" alt="Agile 2011" border="0"/></a></div>
     <div id="badge-geekgirl"><a href="http://www.geekgirlblogs.com/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-geekgirlblogs.png" width="142" height="50" alt="Geek Girl Blogs" border="0"/></a></div>
     <div id="badge-devchix"><a href="http://www.devchix.com/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-devchix.png" width="69" height="75" alt="DevChix" border="0"/></a></div>
     <div id="badge-bbw"><a href="http://www.blogsbywomen.org/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-blogsbywomen.png" width="80" height="15" alt="Blogs by Women" border="0"/></a></div>

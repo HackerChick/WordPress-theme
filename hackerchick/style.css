@@ -23,6 +23,12 @@ p, h1, h2, h3 {
     padding: 0px
 }
 
+td{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10pt;
+    color: #666;
+}
+
 a{ text-decoration:none; }
 a:link, a:visited{  color:#969; }
 a:hover{ color: #F93; text-decoration:underline; }
@@ -142,15 +148,23 @@ a:active{ color: #F93; }
 /* BLOG CONTENT */
 .blogcontent_container{
     width:740px;
-    min-height:2150px;
+    min-height:2200px;
     height: auto !important;    /* weird hack for IE */
-    height:2150px;
+    height:2200px;
     padding: 0px;
     margin: 0px; /* top right bottom left */
     text-align: left;
 }
 
 .blogcontent{
+    padding: 0px 0px 15px 14px; /* top right bottom left */
+    text-align: left;
+}
+
+.pagecontent{
+    min-height:2200px;
+    height: auto !important;    /* weird hack for IE */
+    height:2200px;
     padding: 0px 0px 15px 14px; /* top right bottom left */
     text-align: left;
 }
@@ -465,21 +479,21 @@ div.facebookiframe iframe {
 	margin-bottom:8px;
 }
 
-#badge-adp{
-    height:73px;
-    width:59px;
+#badge-topblogs{
+    height:100px;
+    width:94px;
     float:left;
     vertical-align:middle;
     margin: 0px;
-    padding: 10px 0px 0px 40px; /* top right bottom left */
+    padding: 0px 0px 0px 0px; /* top right bottom left */
 }
 
-#badge-agile10{
-    height:66px;
-    width:110px;
-    float:right;
+#badge-agile11{
+    height:68px;
+    width:150px;
+    float:left;
     margin: 0px;
-    padding: 0px 45px 0px 5px; /* top right bottom left */
+    padding: 35px 0px 0px 10px; /* top right bottom left */
 }
 
 #badge-geekgirl{
@@ -487,7 +501,7 @@ div.facebookiframe iframe {
     width:142px;
     float:right;
     margin: 0px;
-    padding: 0px 30px 0px 5px; /* top right bottom left */
+    padding: 10px 30px 0px 5px; /* top right bottom left */
 }
 
 #badge-devchix{
@@ -495,7 +509,7 @@ div.facebookiframe iframe {
     width:69px;
     float:left;
     margin: 0px;
-    padding: 5px 0px 0px 5px; /* top right bottom left */
+    padding: 15px 0px 0px 5px; /* top right bottom left */
 }
 
 #badge-bbw{
@@ -503,7 +517,7 @@ div.facebookiframe iframe {
     width:80px;
     float:right;
     margin: 0px;
-    padding: 10px 0px 0px 0px; /* top right bottom left */
+    padding: 20px 0px 0px 0px; /* top right bottom left */
 }
 
 /* FOOTER */

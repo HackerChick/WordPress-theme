@@ -23,16 +23,24 @@
     <img class="footer_header" src="<?php bloginfo('template_directory'); ?>/images/big-room.png" width="144" height="17" alt="The Big Room"/>
     <div class="past_event_pix">
 
-    <a href="http://faststartup-customer-development.eventbrite.com/" target="_blank" onmouseover="ShowPicture('mouseover-picture10')" onmouseout="HidePicture('mouseover-picture10')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture10.jpg" width="150" height="90" alt="Past Event Picture" border="0"/></a>
-    <a href="http://blogs.msdn.com/b/cbowen/archive/2010/09/27/new-england-code-camp-14-the-schedule.aspx" target="_blank" onmouseover="ShowPicture('mouseover-picture9')" onmouseout="HidePicture('mouseover-picture9')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture9.jpg" width="92" height="90" alt="Past Event Picture" border="0"/></a>
-    <a href="http://startupbootcamp.mit.edu/" target="_blank" onmouseover="ShowPicture('mouseover-picture8')" onmouseout="HidePicture('mouseover-picture8')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture8.jpg" width="118" height="90" alt="Past Event Picture" border="0"/></a>
-    <a href="http://startupbootcamp.mit.edu/" target="_blank" onmouseover="ShowPicture('mouseover-picture7')" onmouseout="HidePicture('mouseover-picture7')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture7.jpg" width="119" height="90" alt="Past Event Picture" border="0"/></a>
-    <a href="http://www.newtechusa.com/agileboston" target="_blank" onmouseover="ShowPicture('mouseover-picture6')" onmouseout="HidePicture('mouseover-picture6')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture6.jpg" width="87" height="90" alt="Past Event Picture" border="0"/></a>
-    <a href="http://www.sqe.com/AgileDevPracticesWest/Concurrent/Default.aspx?Day=Wednesday#AW8" target="_blank" onmouseover="ShowPicture('mouseover-picture5')" onmouseout="HidePicture('mouseover-picture5')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture5.jpg" width="153" height="90" alt="Past Event Picture" border="0"/></a>
-    <a href="http://boston.startupweekend.com/" target="_blank" onmouseover="ShowPicture('mouseover-picture4')" onmouseout="HidePicture('mouseover-picture4')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture4.jpg" width="116" height="90" alt="Past Event Picture" border="0"/></a>
-    <a href="http://dogpatchlabs.com/" target="_blank" onmouseover="ShowPicture('mouseover-picture3')" onmouseout="HidePicture('mouseover-picture3')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture3.jpg" width="147" height="90" alt="Past Event Picture" border="0"/></a>
-<!--    <a href="http://www.agilebazaar.org/index.php?option=com_content&view=category&layout=blog&id=43&Itemid=115" target="_blank" onmouseover="ShowPicture('mouseover-picture2')" onmouseout="HidePicture('mouseover-picture2')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture2.jpg" width="86" height="90" alt="Past Event Picture" border="0"/></a> -->
-    <a href="http://www.microsoft.com/about/diversity/programs/digigirlz.mspx" target="_blank" onmouseover="ShowPicture('mouseover-picture1')" onmouseout="HidePicture('mouseover-picture1')"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture1.jpg" width="132" height="90" alt="Past Event Picture" border="0"/></a>
+    <a href="http://dartboston.com/dartboston%E2%80%99s-techstars-after-party/"
+     target="_blank" onmouseover="ShowPicture('mouseover-picture9')" onmouseout="HidePicture('mouseover-picture9')"><img width="144" height="100" src="<?php bloginfo('template_directory'); ?>/images/pix/picture9.jpg" alt="Past Event Picture" border="0"/></a>
+    <a href="http://www.techstars.org"
+     target="_blank" onmouseover="ShowPicture('mouseover-picture8')" onmouseout="HidePicture('mouseover-picture8')"><img width="140" height="100" src="<?php bloginfo('template_directory'); ?>/images/pix/picture8.jpg" alt="Past Event Picture" border="0"/></a>
+    <a href="http://casereportal.com/"
+     target="_blank" onmouseover="ShowPicture('mouseover-picture7')" onmouseout="HidePicture('mouseover-picture7')"><img width="122" height="100" src="<?php bloginfo('template_directory'); ?>/images/pix/picture7.jpg" alt="Past Event Picture" border="0"/></a>
+    <a href="http://boston.startupweekend.org/"
+     target="_blank" onmouseover="ShowPicture('mouseover-picture6')" onmouseout="HidePicture('mouseover-picture6')"><img width="115" height="100" src="<?php bloginfo('template_directory'); ?>/images/pix/picture6.jpg" alt="Past Event Picture" border="0"/></a>
+    <a href="http://www.thehackerchickblog.com/2011/04/how-development-looks-different-when-youre-changing-the-world.html"
+     target="_blank" onmouseover="ShowPicture('mouseover-picture5')" onmouseout="HidePicture('mouseover-picture5')"><img width="94" height="100" src="<?php bloginfo('template_directory'); ?>/images/pix/picture5.jpg" alt="Past Event Picture" border="0"/></a>
+    <a href="http://startupweekend.org"
+     target="_blank" onmouseover="ShowPicture('mouseover-picture4')" onmouseout="HidePicture('mouseover-picture4')"><img width="150" height="100" src="<?php bloginfo('template_directory'); ?>/images/pix/picture4.jpg" alt="Past Event Picture" border="0"/></a>
+    <a href="http://sxsw.com/"
+     target="_blank" onmouseover="ShowPicture('mouseover-picture3')" onmouseout="HidePicture('mouseover-picture3')"><img width="122" height="100" src="<?php bloginfo('template_directory'); ?>/images/pix/picture3.jpg" alt="Past Event Picture" border="0"/></a>
+    <a href="http://sitatthetable.eventbrite.com/"
+     target="_blank" onmouseover="ShowPicture('mouseover-picture2')" onmouseout="HidePicture('mouseover-picture2')"><img width="131" height="100" src="<?php bloginfo('template_directory'); ?>/images/pix/picture2.jpg" alt="Past Event Picture" border="0"/></a>
+    <a href="http://www.techstars.org/techstars-for-a-day/"
+     target="_blank" onmouseover="ShowPicture('mouseover-picture1')" onmouseout="HidePicture('mouseover-picture1')"><img width="121" height="100" src="<?php bloginfo('template_directory'); ?>/images/pix/picture1.jpg" alt="Past Event Picture" border="0"/></a>
     </div>
 
     <!-- Mouseover Descriptions of the div -->
@@ -45,9 +53,9 @@
     <div class="mouseover-caption" id="mouseover-picture7"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture7-text.png" width="480" height="80"></div>
     <div class="mouseover-caption" id="mouseover-picture8"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture8-text.png" width="480" height="80"></div>
     <div class="mouseover-caption" id="mouseover-picture9"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture9-text.png" width="480" height="80"></div>
-    <div class="mouseover-caption" id="mouseover-picture10"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture10-text.png" width="480" height="80"></div>
+<!--    <div class="mouseover-caption" id="mouseover-picture10"><img src="<?php bloginfo('template_directory'); ?>/images/pix/picture10-text.png" width="480" height="80"></div> -->
     
-    <div class="mouseover-caption" id="mouseover-default""><img src="<?php bloginfo('template_directory'); ?>/images/pix/mouseover-text.png" width="480" height="90"></div>
+    <div class="mouseover-caption" id="mouseover-default""><img src="<?php bloginfo('template_directory'); ?>/images/pix/mouseover-text.png" width="480" height="80"></div>
 
     </center>
     </div>

@@ -8,15 +8,15 @@ function display_upcoming_events( ){
     echo '<div class="upcoming_events">';
 
     // Display 7 items
-    display_upcoming_event( '2/5', 'Developers Developers Developers...', 'http://microsoftcambridge.com/Events/DevelopersDevelopersDevelopersDevelopers/tabid/575/Default.aspx', 'Getting students excited about development' );
-    display_upcoming_event( '2/15', 'Boston Tech Meetup', 'http://www.meetup.com/newtech-73/calendar/16103046/', 'Whats new &amp; cool in the local startup scene' );
-    display_upcoming_event( '2/17', 'Boston BizSpark', 'http://webinno29.eventbrite.com/', 'TBD' );
-    display_upcoming_event( '2/24', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/calendar/15848501/', 'Brant Cooper, Peter Vlaskovitz' );
-    display_upcoming_event( '2/25-27', 'Lean Startup Machine', 'http://boston.theleanstartupmachine.com/', 'Startup Weekend, Lean Startup style' );
-    display_upcoming_event( '3/7', 'Web Inno', 'http://webinno29.eventbrite.com/', 'Startup Showcase' );
-    display_upcoming_event( '3/11-15', 'South by Southwest', 'http://sxsw.com/interactive', 'SXSW Interactive' );
+    display_upcoming_event( '3/8', 'Startup Weekend', 'http://startupweekend.org', 'Organizers Summit' );
+    display_upcoming_event( '3/9-13', 'South by Southwest', 'http://sxsw.com/', 'Interactive' );
+    display_upcoming_event( '3/21', 'Harvard', 'http://foundersdilemmas.eventbrite.com/', 'The Founder\'s Dilemmas Book Launch' );
+    display_upcoming_event( '3/29', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston', 'LeanUX' );
 
 	/*
+    display_upcoming_event( '7/15-16', 'Lean Startup Challenge', 'http://www.leanstartupchallenge.com/', 'Kickoff!' );
+    display_upcoming_event( '7/28', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston', 'TBD' );
+    display_upcoming_event( '8/8-12', 'Agile 2011', 'http://program2011.agilealliance.org/event/bbbd058a97e906ab96d85c0aa712a751', 'Presenting on Lean Startup!' );
     display_upcoming_event( '3/18', 'DigiGirlz Day', 'http://www.microsoft.com/about/diversity/en/us/programs/digigirlz/digiGirlzday.aspx', 'High Tech for High School Girlz' );
     display_upcoming_event( '3/24', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/events/15948053/', 'TBD' );
     */
