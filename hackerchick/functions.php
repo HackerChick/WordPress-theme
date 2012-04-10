@@ -7,19 +7,15 @@
 function display_upcoming_events( ){
     echo '<div class="upcoming_events">';
 
-    // Display 7 items
-    display_upcoming_event( '3/8', 'Startup Weekend', 'http://startupweekend.org', 'Organizers Summit' );
-    display_upcoming_event( '3/9-13', 'South by Southwest', 'http://sxsw.com/', 'Interactive' );
-    display_upcoming_event( '3/21', 'Harvard', 'http://foundersdilemmas.eventbrite.com/', 'The Founder\'s Dilemmas Book Launch' );
-    display_upcoming_event( '3/29', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston', 'LeanUX' );
-
-	/*
-    display_upcoming_event( '7/15-16', 'Lean Startup Challenge', 'http://www.leanstartupchallenge.com/', 'Kickoff!' );
-    display_upcoming_event( '7/28', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston', 'TBD' );
-    display_upcoming_event( '8/8-12', 'Agile 2011', 'http://program2011.agilealliance.org/event/bbbd058a97e906ab96d85c0aa712a751', 'Presenting on Lean Startup!' );
-    display_upcoming_event( '3/18', 'DigiGirlz Day', 'http://www.microsoft.com/about/diversity/en/us/programs/digigirlz/digiGirlzday.aspx', 'High Tech for High School Girlz' );
-    display_upcoming_event( '3/24', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/events/15948053/', 'TBD' );
-    */
+    // Display up to 7 items
+    display_upcoming_event( '4/12', 'Startup Hours', 'http://www.venturecafe.net/calendar/', 'Venture Cafe' );
+    display_upcoming_event( '4/18', 'Startup Secrets', 'http://www.eventbrite.com/event/2783538639', 'Mock Pitch Session' );
+    display_upcoming_event( '4/26', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/events/59898252/', 'Using Lean to Enter New Market' );
+    display_upcoming_event( '5/3', 'TechStars', 'http://www.techstars.com/', 'Demo Day!' );
+    display_upcoming_event( '5/9', 'Mass Innovation Nights', 'http://mass.innovationnights.com/', 'Microsoft NERD' );
+    display_upcoming_event( '5/12', 'RamenCamp', 'http://ramencamp.com/', 'Bootstrapping is tough' );    
+    display_upcoming_event( '5/24', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/events/pfjjvyqhbgc/', 'TBD' );
+//    display_upcoming_event( '6/1 - 3', 'Startup Weekend', 'http://boston.startupweekend.org/', 'Gaming' );
     
     // See more at Plancast
     echo '<p><strong>&#0187; &#0187; &#0187; <a href="http://plancast.com/HackerChick" target="_blank">See more on Plancast</a> &#0171; &#0171; &#0171;</strong></p>';
@@ -57,15 +53,15 @@ function shorten_text($text, $length) {
 function display_favorites( $qty ){
     echo '<div class="favorites">';
     display_favorite( 'Lean Startup 101 for Developers', '2010/10/lean-startup-101-for-devs-presentation.html' );
-    display_favorite( 'Be a Rockstar', '2010/12/be-a-rockstar.html' );
-    display_favorite( 'How to Create a Kick Ass Team', '2010/09/how-to-create-a-kick-ass-team.html' );
-    display_favorite( 'Build Your Startup from the Heart', '2010/05/build-your-startup-from-the-heart.html' );
-    display_favorite( 'Evangelist Chick: Preachin\' the Good Word to Devs', '2010/03/evangelist-chick-preachin-good-word-to_19.html' );
+    display_favorite( 'Kanban is the new Scrum', '2012/01/kanban-is-the-new-scrum.html' );
+    display_favorite( 'Is Deploying to Production 50x/Day a GOOD Idea?', '2011/02/continuous-deployment-for-continuous-learning.html' );
+    display_favorite( 'Agile Vs. Lean', '2012/01/agile-vs-lean-yeah-yeah-whats-the-difference.html' );
     display_favorite( 'Are We Agile Yet?', '2010/02/are-we-agile-yet.html' );
+    display_favorite( 'How to Create a Kick Ass Team', '2010/09/how-to-create-a-kick-ass-team.html' );
+    display_favorite( 'Be a Rockstar', '2010/12/be-a-rockstar.html' );
     display_favorite( 'Just Do It: A Quick Intro to Agile\'s Technical Practices', '2010/02/just-do-it-quick-intro-to-agiles.html' );
     display_favorite( 'Agile Leadership: Methodology Ain\'t Enough', '2009/09/agile-leadership-methodology-ain-enough.html' );
     display_favorite( 'Plane Crashes, Software Failures, and other Human Errors', '2009/05/plane-crashes-software-failures-and.html' );
-    display_favorite( 'Beautiful Teams', '2009/04/beautiful-teams.html' );
     echo '</div>';
 }
 
