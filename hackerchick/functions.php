@@ -8,14 +8,14 @@ function display_upcoming_events( ){
     echo '<div class="upcoming_events">';
 
     // Display up to 7 items
-    display_upcoming_event( '4/12', 'Startup Hours', 'http://www.venturecafe.net/calendar/', 'Venture Cafe' );
-    display_upcoming_event( '4/18', 'Startup Secrets', 'http://www.eventbrite.com/event/2783538639', 'Mock Pitch Session' );
-    display_upcoming_event( '4/26', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/events/59898252/', 'Using Lean to Enter New Market' );
-    display_upcoming_event( '5/3', 'TechStars', 'http://www.techstars.com/', 'Demo Day!' );
-    display_upcoming_event( '5/9', 'Mass Innovation Nights', 'http://mass.innovationnights.com/', 'Microsoft NERD' );
-    display_upcoming_event( '5/12', 'RamenCamp', 'http://ramencamp.com/', 'Bootstrapping is tough' );    
-    display_upcoming_event( '5/24', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston/events/pfjjvyqhbgc/', 'TBD' );
-//    display_upcoming_event( '6/1 - 3', 'Startup Weekend', 'http://boston.startupweekend.org/', 'Gaming' );
+    display_upcoming_event( '6/14', 'Boston Startup School', 'http://bostonstartupschool.com/', 'Lean Startup' );
+    display_upcoming_event( '6/15-16', 'Lean Startup Machine', 'http://leanstartupmachine.com/events/boston-june-15-17/', 'MVP Hacks' );
+    display_upcoming_event( '6/19', 'Intelligent.ly', 'http://agile-startups.eventbrite.com/', 'Agile for Startups' );
+    display_upcoming_event( '6/22', 'TEDx Boston', 'http://tedxboston.org/', 'Revolutionary Ideas' );
+    display_upcoming_event( '6/23-24', 'Angel Hack', 'http://angelhack.com/', 'Bi-coastal Hackathon' );
+    display_upcoming_event( '6/25', 'WebInno', 'http://webinno34.eventbrite.com/', '#34' );    
+    display_upcoming_event( '6/26', 'TechStars 4 A Day', 'http://techstars.com/', '' );
+    display_upcoming_event( '6/27', 'Tech Cocktail', 'http://tcsessionsboston2.eventbrite.com/', 'Harnessing Power of Your Network' );
     
     // See more at Plancast
     echo '<p><strong>&#0187; &#0187; &#0187; <a href="http://plancast.com/HackerChick" target="_blank">See more on Plancast</a> &#0171; &#0171; &#0171;</strong></p>';
