@@ -65,17 +65,7 @@
     </div>
     <!-- BADGES: END -->
 
-    <div style="clear: both;"></div> 
-    <!-- CC LICENSE -->
-    <center>
-    <div class="item" id="cc_license">
-    <p>Information wants to be free<br/>
-    <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/creative-commons.png" width="88" height="31" alt="Creative Commons Attribution-Noncommercial-Share Alike License" border="0"/></a><br/>
-    The Hacker Chick Blog by <a href="http://www.TheHackerChickBlog.com">Abby Fichtner</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" target="_blank">Creative Commons Attribution-Noncommercial Shake Alike 3.0 Lience</a>.</p>
 
-    <p><strong><em>Disclaimer: The opinions expressed herein are my own personal opinions and do not represent my employer's view in anyway.</em></strong></p>
-    </div></center>
-    <!-- CC LICENSE: END -->
     
 </div></div>
 <!-- SIDEBAR: END -->

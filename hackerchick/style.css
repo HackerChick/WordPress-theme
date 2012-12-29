@@ -469,14 +469,9 @@ div.facebookiframe iframe {
 }
 
 #cc_license{
-    padding-top:30px;
+    padding-top:8px;
     font-size:7pt;
     text-align:center;
-    width:230px;
-}
-
-#cc_license p{
-	margin-bottom:8px;
 }
 
 #badge-topblogs{
@@ -550,76 +545,10 @@ div.facebookiframe iframe {
 .footer_container a{ color:#d0b0bf; text-decoration:none; }
 .footer_container a:hover{ color:#fff; text-decoration:none; }
 
-#column1{
-    float: left;
-    width:25%;
-    overflow:hidden;
-    margin:0;
-    padding:0;
-}
-#column2{
-    float: left;
-    width:48%;
-
-    margin:auto;
-    margin:0;
-    padding:0;
-}
-#column3{
-    float: right;
-    text-align:right;
-    width:25%;
-    overflow:hidden;
-    margin:0;
-    padding:0;
-}
-
-.tweet{
-    min-height:48px;    /* height of twitter avatar */
-    height: auto !important;    /* weird hack for IE */
-    height:48px;
-    margin: 0px 0px 10px 0px; /* top right bottom left */
-    vertical-align:middle;
-}
-
-.twitter_avatar{
-    width:48px;
-    height:48px;
-    border:none;
-    padding: 3px 5px 0px 0px; /* top right bottom left */
-}
-
-.twitter_tagline{
-    font-style:italic;
-    text-align:right;
-    padding-right:10px;
-}
-
-.commentor_avatar{
-    width:48px;
-    height:48px;
-    border:none;
-    padding: 0;
-    margin: 0;
-}
-
-.past_event_pix{
-    width:95%;
-    text-align:center;
-}
-
-#upcoming_events_header{
-    margin-top:50px;
-}
-
-.upcoming_events p {
-    margin-bottom:5px;
-}
-
 .footnote{
     font-size:8pt;
     padding:0;
-    margin-top:10px;
+    margin-top:0px;
 }   
 
 /* Styles to use within posts */
