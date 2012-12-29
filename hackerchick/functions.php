@@ -8,14 +8,14 @@ function display_upcoming_events( ){
     echo '<div class="upcoming_events">';
 
     // Display up to 7 items
-    display_upcoming_event( '6/14', 'Boston Startup School', 'http://bostonstartupschool.com/', 'Lean Startup' );
-    display_upcoming_event( '6/15-16', 'Lean Startup Machine', 'http://leanstartupmachine.com/events/boston-june-15-17/', 'MVP Hacks' );
-    display_upcoming_event( '6/19', 'Intelligent.ly', 'http://agile-startups.eventbrite.com/', 'Agile for Startups' );
-    display_upcoming_event( '6/22', 'TEDx Boston', 'http://tedxboston.org/', 'Revolutionary Ideas' );
-    display_upcoming_event( '6/23-24', 'Angel Hack', 'http://angelhack.com/', 'Bi-coastal Hackathon' );
-    display_upcoming_event( '6/25', 'WebInno', 'http://webinno34.eventbrite.com/', '#34' );    
-    display_upcoming_event( '6/26', 'TechStars 4 A Day', 'http://techstars.com/', '' );
-    display_upcoming_event( '6/27', 'Tech Cocktail', 'http://tcsessionsboston2.eventbrite.com/', 'Harnessing Power of Your Network' );
+    display_upcoming_event( '11/7', 'Boston Startup School', 'http://bostonstartupschool.com/', 'Lean Startup' );
+    display_upcoming_event( '11/9', 'Babson Enterprise Forum', 'http://babsonforum.com/2012/speakers/', 'Breaking Down Barriers' );
+    display_upcoming_event( '11/14', 'TechStars Demo Day', 'http://techstars.com/', 'YaY!' );
+    display_upcoming_event( '11/16', 'MassTLC unConference', 'http://masstlcuncon.org/mentors/', 'Mentor' );
+    display_upcoming_event( '11/29', 'Lean Startup Circle', 'http://www.meetup.com/Lean-Startup-Circle-Boston', '' );
+//    display_upcoming_event( '6/25', 'WebInno', 'http://webinno34.eventbrite.com/', '#34' );    
+//    display_upcoming_event( '6/26', 'TechStars 4 A Day', 'http://techstars.com/', '' );
+//    display_upcoming_event( '6/27', 'Tech Cocktail', 'http://tcsessionsboston2.eventbrite.com/', 'Harnessing Power of Your Network' );
     
     // See more at Plancast
     echo '<p><strong>&#0187; &#0187; &#0187; <a href="http://plancast.com/HackerChick" target="_blank">See more on Plancast</a> &#0171; &#0171; &#0171;</strong></p>';
