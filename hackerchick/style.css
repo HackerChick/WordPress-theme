@@ -72,67 +72,6 @@ a.menu_item{
     padding: 12px 0px 0px 20px; /* top right bottom left */
 }
 
-#top_links{
-    height: 56px;
-    width: 270px;
-    padding:0;
-    float:right;
-    margin-top:0px;
-    margin-right:-5px;
-}
-
-.mouseover-hint{
-    visibility:hidden;
-    position:absolute;
-    padding:0;
-    float:right;
-}
-
-#mouseover-twitter{
-    height: 56px;
-    width: 148px;
-    margin-top:32px;
-    margin-left:787px;
-}
-
-#mouseover-facebook{
-    height: 76px;
-    width: 230px;
-    margin-top:11px;
-    margin-left:785px;
-}
-
-#mouseover-linkedin{
-    height: 55px;
-    width: 157px;
-    margin-top:32px;
-    margin-left:827px;
-}
-
-#mouseover-rss{
-    height: 67px;
-    width: 153px;
-    margin-top:21px;
-    margin-left:866px;
-}
-
-.mouseover-caption{
-    width: 480px;
-    height: 80px;
-    float:left;
-    visibility:hidden;
-    position:absolute;
-    padding:0;
-    margin: 0;
-    margin-top: 13px;
-    margin-left:10px;
-}
-
-#mouseover-default{
-	visibility:visible;
-	visibility:show;
-}
-
 /* CONTENT */
 #content{
     background:url('./images/content-background.png') repeat-y; /* background image allows it to appear that the sidebar overlaps the content by extending content bg's white 7 pixels into sidebar */
@@ -401,6 +340,66 @@ a.menu_item{
     display:inline; /* needed for ie issue(float drop bug?) where content from blogcontent repeats in sidebar */
 }
 
+#top_links{
+    height: 56px;
+    width: 270px;
+    padding:0;
+    float:right;
+    margin: 0px;
+}
+
+.mouseover-hint{
+    visibility:hidden;
+    position:absolute;
+    padding:0;
+    float:right;
+}
+
+#mouseover-twitter{
+    height: 56px;
+    width: 148px;
+    margin-top:-55px;
+    margin-left:52px;
+}
+
+#mouseover-facebook{
+    height: 76px;
+    width: 230px;
+    margin-top:-76px;
+    margin-left:55px;
+}
+
+#mouseover-linkedin{
+    height: 55px;
+    width: 157px;
+    margin-top:-55px;
+    margin-left:97px;
+}
+
+#mouseover-rss{
+    height: 67px;
+    width: 153px;
+    margin-top:-66px;
+    margin-left:136px;
+}
+
+.mouseover-caption{
+    width: 480px;
+    height: 80px;
+    float:left;
+    visibility:hidden;
+    position:absolute;
+    padding:0;
+    margin: 0;
+    margin-top: 13px;
+    margin-left:10px;
+}
+
+#mouseover-default{
+	visibility:visible;
+	visibility:show;
+}
+  
 #hackerchick{
     background:url('./images/hackerchick.gif') no-repeat;
     width:284px;
@@ -420,12 +419,6 @@ a.menu_item{
     margin: 0;
     text-align:left;
     line-height:125%;
-}
-
-.sidebar_content .first_item{
-    width:260px;     /* sidebar width (284) - padding right & left (24) */
-    padding-bottom:20px;
-    padding-top:0px;
 }
 
 .sidebar_content .item{
