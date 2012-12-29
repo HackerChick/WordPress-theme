@@ -52,17 +52,23 @@ a:active{ color: #F93; }
     padding:0;
 }
 
-#menu{
+.menu{
     padding: 5px 10px 0px 10px; /* top right bottom left */
-}
-a.menu_item{
     color:#068;
     font-family:"Arial Black", Gadget, sans-serif;
     font-variant:small-caps;
     font-size:12pt;
     font-weight:500;
+}
+
+.menu_item{
     padding: 0px 10px 0px 10px; /* top right bottom left */
 }
+
+.menu a { color:#068; text-decoration:none;}
+.menu a:visited { color:#068; text-decoration:none;}
+.menu a:hover{ color:#969; text-decoration:underline;}
+  
 
 #headerimg{
     height:85px;
@@ -130,21 +136,21 @@ a.menu_item{
 }
 
 .posttitle{
-    color:#066;
+    color:#068;
     font-family:"Arial Black", Gadget, sans-serif;
     font-variant:small-caps;
-    font-size:18pt;
-    font-weight:900;
+    font-size:15pt;
+    font-weight:500;
     line-height:110%;
     margin: 0px 0px 15px 0px; /* top right bottom left */
     padding:0;
 }
 
-.posttitle a { color:#066; text-decoration:none;}
-.posttitle a:visited { color:#066; text-decoration:none;}
+.posttitle a { color:#068; text-decoration:none;}
+.posttitle a:visited { color:#068; text-decoration:none;}
 .posttitle a:hover{ color:#969; text-decoration:underline;}
-.teaser_header a { color:#066; text-decoration:none;}
-.teaser_header a:visited { color:#066; text-decoration:none;}
+.teaser_header a { color:#068; text-decoration:none;}
+.teaser_header a:visited { color:#068; text-decoration:none;}
 .teaser_header a:hover{ color:#969; text-decoration:underline; }
 
 .postbody{
@@ -242,7 +248,7 @@ a.menu_item{
 }
 
 .related_posts_header{
-    color:#066;
+    color:#068;
     font-family:"Arial Black", Gadget, sans-serif;
     font-size:13pt;
     font-weight:900;
@@ -283,8 +289,8 @@ a.menu_item{
 }
 .navOlderLink a{
     display: block;
-    width: 172px;
-    height: 22px;
+    width: 208px;
+    height: 25px;
     background: url('./images/older.png') bottom;
     text-indent: -99999px;
     float:left;
@@ -296,8 +302,8 @@ a.menu_item{
 
 .navNewerLink a{
     display: block;
-    width: 172px;
-    height: 22px;
+    width: 208px;
+    height: 25px;
     background: url('./images/newer.png') bottom;
     text-indent: -99999px;
     float:right;
@@ -309,8 +315,8 @@ a.menu_item{
 
 .navHomeLink a{
     display: block;
-    width: 172px;
-    height: 22px;
+    width: 208px;
+    height: 25px;
     background: url('./images/home.png') bottom;
     text-indent: -99999px;
     margin: auto;
@@ -564,11 +570,11 @@ div.facebookiframe iframe {
 
 /* just the title color */
 .title{
-    color:#066;
+    color:#068;
 }
 
 .header{
-    color:#066;
+    color:#068;
     font-weight:900;
     font-style:italic;
     font-size:13pt;
@@ -576,7 +582,7 @@ div.facebookiframe iframe {
 }
 
 .subtitle{
-    color:#066;
+    color:#068;
     font-weight:900;
     font-style:italic;
 }

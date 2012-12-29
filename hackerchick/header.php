@@ -73,11 +73,11 @@ function CancelDefaultMouseoverDisplay(id){
 <!-- ************************************************************************************************************************* -->
 <div id="header">
 
-   <div id="menu">
-      <a class="menu_item" href="<?php echo get_option('home'); ?>">Blog</a> 
+   <div class="menu">
+      <a class="menu_item" href="<?php echo get_option('home'); ?>">Blog</a>
       <a class="menu_item" href="<?php echo get_option('home'); ?>/about">About</a> 
-      <a class="menu_item" href="<?php echo get_option('home'); ?>/resume">Resume</a> 
-      <a class="menu_item" href="http://www.slideshare.net/HackerChick" target=_new>Presentations</a> 
+      <a class="menu_item" href="<?php echo get_option('home'); ?>/resume">Resume</a>
+      <a class="menu_item" href="http://www.slideshare.net/HackerChick" target=_new>Presentations</a>
    </div>      
           
     <div id="headerimg">

@@ -39,7 +39,7 @@
     
     <?php if (have_posts()) : ?>
 
-        <!-- space first post down so it aligns when you click into it -->
+        <!-- space first post down so it aligns when you click into it (internal pages have navigation up top) -->
         <div id="postNavigation_spacer"></div>
 
         <?php $count = 0; ?>

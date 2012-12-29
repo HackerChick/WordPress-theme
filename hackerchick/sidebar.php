@@ -18,7 +18,7 @@
 
     <!-- HACKER -->
     <div class="item">
-    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/hacker.png" width="137" height="27" alt="hacker"/>
+    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/hacker.png" width="183" height="25" alt="hacker"/>
     <p>Someone who thinks outside the box. Someone who discards conventional wisdom and does something else instead. Someone who looks at the edge and wonders what's beyond. Someone who sees a set of rules and wonders what happens if you don't follow them. <font size="-1"><em>- Bruce Schneier</em></font></p>
     </div>
     <!-- HACKER: END -->
@@ -48,14 +48,14 @@
 
     <!-- FAVORITES -->
     <div class="item">
-    <p><img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/favorites.png" width="176" height="27" alt="Favorites"/>
+    <p><img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/favorites.png" width="254" height="25" alt="Favorites"/>
     <?php display_favorites( 10 ); ?></p>
     </div>
     <!-- FAVORITES: END -->
 
     <!-- TAGS -->
     <div class="item">
-    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/topics.png" width="125" height="27" alt="topics"/>
+    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/topics.png" width="162" height="30" alt="topics"/>
 
     <p class="tagCloud"><?php wp_tag_cloud( array('smallest' => 8, 'largest' => '16' ) ); ?></p>
     </div>
@@ -63,7 +63,7 @@
 
     <!-- SEARCH -->
     <div class="item">
-    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/search.png" width="136" height="28" alt="search"/>
+    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/search.png" width="183" height="25" alt="search"/>
     <?php get_search_form(); ?>
     </div>
     <!-- SEARCH: END -->
