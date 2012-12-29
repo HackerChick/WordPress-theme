@@ -27,10 +27,10 @@
 
            
     <!-- SOCIAL MEDIA LINKS -->
-    <div class="mouseover-hint" id="mouseover-twitter"><img src="<?php bloginfo('template_directory'); ?>/images/follow-me.png" width="148" height="56"></div>
-    <div class="mouseover-hint" id="mouseover-facebook"><img src="<?php bloginfo('template_directory'); ?>/images/share-on-facebook.png" width="230" height="76"></div>
-    <div class="mouseover-hint" id="mouseover-linkedin"><img src="<?php bloginfo('template_directory'); ?>/images/see-connected.png" width="157" height="55"></div>
-    <div class="mouseover-hint" id="mouseover-rss"><img src="<?php bloginfo('template_directory'); ?>/images/subscribe.png" width="153" height="67"></div>
+    <div class="mouseover-hint" id="mouseover-twitter"><img src="<?php bloginfo('template_directory'); ?>/images/follow-me.png" width="121" height="57"></div>
+    <div class="mouseover-hint" id="mouseover-facebook"><img src="<?php bloginfo('template_directory'); ?>/images/share-on-facebook.png" width="171" height="69"></div>
+    <div class="mouseover-hint" id="mouseover-linkedin"><img src="<?php bloginfo('template_directory'); ?>/images/see-connected.png" width="142" height="59"></div>
+    <div class="mouseover-hint" id="mouseover-rss"><img src="<?php bloginfo('template_directory'); ?>/images/subscribe.png" width="127" height="67"></div>
     
     <center><div id="top_links">
         <a href="http://www.twitter.com/HackerChick" target="_blank" onmouseover="ShowPicture('mouseover-twitter')" onmouseout="HidePicture('mouseover-twitter')"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png" width="60" height="56" border="0" alt="Follow The Hacker Chick on Twitter" /></a>
