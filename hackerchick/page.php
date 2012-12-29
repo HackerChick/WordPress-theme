@@ -23,6 +23,9 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+        <!-- space first post down so it aligns with pages (internal pages have navigation up top) -->
+        <div id="postNavigation_spacer"></div>
+
         <!-- POST -->
 	<div class="post" id="post-<?php the_ID(); ?>">
 	<p class="posttitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
