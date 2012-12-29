@@ -45,38 +45,39 @@ a:active{ color: #F93; }
 
 /* HEADER */
 #header{
-    background: url('./images/header-background.png') no-repeat;
-    height: 164px;
+    height: 115px;
     width: 1024px;
     text-align:left;
     margin:0;
     padding:0;
 }
 
-#headerimg{
-    height:96px;
-    width:762px;
-    position:absolute;
-    margin: 0px;
-    padding: 20px 0px 0px 24px; /* top right bottom left */
+#menu{
+    padding: 5px 10px 0px 10px; /* top right bottom left */
+}
+a.menu_item{
+    color:#068;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-variant:small-caps;
+    font-size:12pt;
+    font-weight:500;
+    padding: 0px 10px 0px 10px; /* top right bottom left */
 }
 
-.aboutLink {
-    background: url('./images/about.png') bottom;
-    width: 206px;
-    height: 73px;
+#headerimg{
+    height:85px;
+    width:781px;
     position:absolute;
-    padding:0;
-    margin: 115px 0px 0px 9px; /* top right bottom left */
+    margin: 0px;
+    padding: 12px 0px 0px 20px; /* top right bottom left */
 }
-.aboutLink:hover {  background-position: 0 0; }
 
 #top_links{
     height: 56px;
     width: 270px;
     padding:0;
     float:right;
-    margin-top:91px;
+    margin-top:0px;
     margin-right:-5px;
 }
 
@@ -413,23 +414,18 @@ a:active{ color: #F93; }
     height:560px;
 }
 
-/* note: this actually goes in the header */
-#top_of_sidebar{
-    height: 47px;
-    width: 134px;
-    padding:0;
-    float:right;
-    position:absolute;
-    margin-top:17px;  /* top of "Hacker" heading */
-    margin-left:754px;  /* content width (740) + sidebar_content padding-left (14) */
-}
-
 .sidebar_content{
     position:absolute;  /* without this, the content gets pushed to underneath of the sidebar in IE */
     padding: 28px 10px 0px 14px; /* top right bottom left */ /* top padding is to leave room for "Hacker" title which is actually in the Header */
     margin: 0;
     text-align:left;
     line-height:125%;
+}
+
+.sidebar_content .first_item{
+    width:260px;     /* sidebar width (284) - padding right & left (24) */
+    padding-bottom:20px;
+    padding-top:0px;
 }
 
 .sidebar_content .item{

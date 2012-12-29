@@ -9,6 +9,21 @@
 <!-- SIDEBAR                                                                                                                  -->
 <!-- ************************************************************************************************************************* -->
 <div id="sidebar">
+           
+    <!-- SOCIAL MEDIA LINKS -->
+    <div class="mouseover-hint" id="mouseover-twitter"><img src="<?php bloginfo('template_directory'); ?>/images/follow-me.png" width="148" height="56"></div>
+    <div class="mouseover-hint" id="mouseover-facebook"><img src="<?php bloginfo('template_directory'); ?>/images/share-on-facebook.png" width="230" height="76"></div>
+    <div class="mouseover-hint" id="mouseover-linkedin"><img src="<?php bloginfo('template_directory'); ?>/images/see-connected.png" width="157" height="55"></div>
+    <div class="mouseover-hint" id="mouseover-rss"><img src="<?php bloginfo('template_directory'); ?>/images/subscribe.png" width="153" height="67"></div>
+    
+    <center><div id="top_links">
+        <a href="http://www.twitter.com/HackerChick" target="_blank" onmouseover="ShowPicture('mouseover-twitter')" onmouseout="HidePicture('mouseover-twitter')"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png" width="60" height="56" border="0" alt="Follow The Hacker Chick on Twitter" /></a>
+        <a href="http://www.facebook.com/HackerChickLabs" target="_blank" onmouseover="ShowPicture('mouseover-facebook')" onmouseout="HidePicture('mouseover-facebook')"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.png" width="60" height="56" border="0" alt="Share how you're pushing the edge on Hacker Chick Labs" /></a>
+        <a href="http://www.linkedin.com/in/abbyfichtner" target="_blank" onmouseover="ShowPicture('mouseover-linkedin')" onmouseout="HidePicture('mouseover-linkedin')"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" width="60" height="56" border="0" alt="See how we're connected on LinkedIn" /></a>
+        <a href="http://feeds.feedburner.com/TheHackerChickBlog" target="_blank" onmouseover="ShowPicture('mouseover-rss')" onmouseout="HidePicture('mouseover-rss')"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png" width="60" height="56" border="0" alt="Subscribe to The Hacker Chick Blog" /></a>
+    </div></center>
+
+    <div style="clear: both;"></div> 
 
     <!-- HACKER CHICK -->
     <div id="hackerchick"></div>
@@ -18,7 +33,7 @@
 
     <!-- HACKER -->
     <div class="item">
-    <!-- NOTE: Title Image"Hacker" is in the Header -->
+       <img src="<?php bloginfo('template_directory'); ?>/images/hacker.png" width="134" height="27" alt="Hacker" border="0"/>
     <p>Someone who thinks outside the box. Someone who discards conventional wisdom and does something else instead. Someone who looks at the edge and wonders what's beyond. Someone who sees a set of rules and wonders what happens if you don't follow them. <font size="-1"><em>- Bruce Schneier</em></font></p>
     </div>
     <!-- HACKER: END -->
