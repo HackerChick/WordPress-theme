@@ -94,9 +94,9 @@ a:active{ color: #F93; }
 /* BLOG CONTENT */
 .blogcontent_container{
     width:740px;
-    min-height:2200px;
+    min-height:2240px;
     height: auto !important;    /* weird hack for IE */
-    height:2200px;
+    height:2240px;
     padding: 0px;
     margin: 0px; /* top right bottom left */
     text-align: left;
@@ -174,8 +174,16 @@ a:active{ color: #F93; }
 }
 
 .readmoretext{
-    font-size:16pt;
-    font-weight:900;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-size:12pt;
+    font-weight:500;
+}
+
+
+.readmoretext_teaser{
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-size:12pt;
+    font-weight:500;
 }
 
 .post_teaser{
@@ -234,11 +242,6 @@ a:active{ color: #F93; }
 
 .postteaser_spacer{
     height: 8px;
-}
-
-.readmoretext_teaser{
-    font-size:11pt;
-    font-weight:900;
 }
 
 /* RELATED POSTS */
@@ -307,7 +310,7 @@ a:active{ color: #F93; }
     background: url('./images/newer.png') bottom;
     text-indent: -99999px;
     float:right;
-    text-align:right;
+    text-align:left;
     padding:0;
     margin: 0;
 }
@@ -463,7 +466,7 @@ div.facebookiframe iframe {
 }
 
 #badges{
-    padding-top:50px;
+    padding-top:15px;
 }
 
 #cc_license{
@@ -478,15 +481,23 @@ div.facebookiframe iframe {
     float:left;
     vertical-align:middle;
     margin: 0px;
-    padding: 0px 0px 0px 0px; /* top right bottom left */
+    padding: 0px 0px 0px 25px; /* top right bottom left */
+}
+
+#badge-topwomen{
+    height:100px;
+    width:100px;
+    float:left;
+    margin: 0px;
+    padding: 35px 0px 0px 10px; /* top right bottom left */
 }
 
 #badge-agile11{
     height:68px;
     width:150px;
-    float:left;
     margin: 0px;
-    padding: 35px 0px 0px 10px; /* top right bottom left */
+    float: left;
+    padding: 20px 0px 0px 50px; /* top right bottom left */
 }
 
 #badge-geekgirl{
@@ -574,21 +585,23 @@ div.facebookiframe iframe {
 }
 
 .header{
-    color:#068;
-    font-weight:900;
-    font-style:italic;
-    font-size:13pt;
+    color:#4e2a3e;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-weight:500;
+    font-size:12pt;
     padding-top:10px;
 }
 
 .subtitle{
-    color:#068;
-    font-weight:900;
-    font-style:italic;
+    color:#4e2a3e;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-weight:500;
 }
 
 .subHeader{
-    color:#7c5d40;
+    color:#4e2a3e;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-weight:500;
 }
 
 .highlight{
