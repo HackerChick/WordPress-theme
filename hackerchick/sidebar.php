@@ -9,6 +9,22 @@
 <!-- SIDEBAR                                                                                                                  -->
 <!-- ************************************************************************************************************************* -->
 <div id="sidebar">
+
+    <!-- HACKER CHICK -->
+    <div id="hackerchick"></div>
+    <!-- HACKER CHICK : END -->
+
+    <div class="sidebar_content">
+
+    <!-- HACKER -->
+    <div class="item">
+    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/hacker.png" width="137" height="27" alt="hacker"/>
+    <p>Someone who thinks outside the box. Someone who discards conventional wisdom and does something else instead. Someone who looks at the edge and wonders what's beyond. Someone who sees a set of rules and wonders what happens if you don't follow them. <font size="-1"><em>- Bruce Schneier</em></font></p>
+    </div>
+    <!-- HACKER: END -->
+
+    <div id="hackerchick_spacer"></div>
+
            
     <!-- SOCIAL MEDIA LINKS -->
     <div class="mouseover-hint" id="mouseover-twitter"><img src="<?php bloginfo('template_directory'); ?>/images/follow-me.png" width="148" height="56"></div>
@@ -25,21 +41,7 @@
 
     <div style="clear: both;"></div> 
 
-    <!-- HACKER CHICK -->
-    <div id="hackerchick"></div>
-    <!-- HACKER CHICK : END -->
-
-    <div class="sidebar_content">
-
-    <!-- HACKER -->
-    <div class="item">
-       <img src="<?php bloginfo('template_directory'); ?>/images/hacker.png" width="134" height="27" alt="Hacker" border="0"/>
-    <p>Someone who thinks outside the box. Someone who discards conventional wisdom and does something else instead. Someone who looks at the edge and wonders what's beyond. Someone who sees a set of rules and wonders what happens if you don't follow them. <font size="-1"><em>- Bruce Schneier</em></font></p>
-    </div>
-    <!-- HACKER: END -->
-
-    <div id="hackerchick_spacer"></div>
-
+    
     <!-- FACEBOOK -->
     <div class="fb-like-box" data-href="http://www.facebook.com/HackerChickLabs" data-width="273" data-height="480" data-show-faces="true" data-stream="true" data-border-color="#e7e0d8" data-header="false"></div>    
     <!-- FACEBOOK: END -->

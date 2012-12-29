@@ -340,12 +340,33 @@ a.menu_item{
     display:inline; /* needed for ie issue(float drop bug?) where content from blogcontent repeats in sidebar */
 }
 
+
+.sidebar_content{
+    position:absolute;  /* without this, the content gets pushed to underneath of the sidebar in IE */
+    padding: 0px 10px 0px 14px; /* top right bottom left */
+    margin: 0;
+    text-align:left;
+    line-height:125%;
+}
+
+.sidebar_content .item{
+    width:260px;     /* sidebar width (284) - padding right & left (24) */
+    padding-bottom:20px;
+}
+
+.sidebar_header_image{
+    padding-top:15px;
+    padding-bottom:5px;
+}
+
+  
 #top_links{
     height: 56px;
     width: 270px;
-    padding:0;
+    padding:0px;
     float:right;
     margin: 0px;
+    margin-left:-4px; /* stupid - to offset extra padding sidebar_content does */
 }
 
 .mouseover-hint{
@@ -359,28 +380,28 @@ a.menu_item{
     height: 56px;
     width: 148px;
     margin-top:-55px;
-    margin-left:52px;
+    margin-left:37px;
 }
 
 #mouseover-facebook{
     height: 76px;
     width: 230px;
     margin-top:-76px;
-    margin-left:55px;
+    margin-left:35px;
 }
 
 #mouseover-linkedin{
     height: 55px;
     width: 157px;
     margin-top:-55px;
-    margin-left:97px;
+    margin-left:82px;
 }
 
 #mouseover-rss{
     height: 67px;
     width: 153px;
     margin-top:-66px;
-    margin-left:136px;
+    margin-left:121px;
 }
 
 .mouseover-caption{
@@ -405,30 +426,12 @@ a.menu_item{
     width:284px;
     height:735px;
     position:absolute;
-    margin: 105px 0px 0px 0px; /* top right bottom left */
+    margin: 130px 0px 0px 0px; /* top right bottom left */
     padding:0px;
 }
 
 #hackerchick_spacer{
     height:560px;
-}
-
-.sidebar_content{
-    position:absolute;  /* without this, the content gets pushed to underneath of the sidebar in IE */
-    padding: 28px 10px 0px 14px; /* top right bottom left */ /* top padding is to leave room for "Hacker" title which is actually in the Header */
-    margin: 0;
-    text-align:left;
-    line-height:125%;
-}
-
-.sidebar_content .item{
-    width:260px;     /* sidebar width (284) - padding right & left (24) */
-    padding-bottom:20px;
-}
-
-.sidebar_header_image{
-    padding-top:15px;
-    padding-bottom:5px;
 }
 
 div.fb-like-box {
