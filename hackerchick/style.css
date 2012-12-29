@@ -46,7 +46,7 @@ a:active{ color: #F93; }
 /* HEADER */
 #header{
     background: url('./images/header-background.png') no-repeat;
-    height: 238px;
+    height: 164px;
     width: 1024px;
     text-align:left;
     margin:0;
@@ -58,7 +58,7 @@ a:active{ color: #F93; }
     width:762px;
     position:absolute;
     margin: 0px;
-    padding: 62px 0px 0px 24px; /* top right bottom left */
+    padding: 20px 0px 0px 24px; /* top right bottom left */
 }
 
 .aboutLink {
@@ -67,7 +67,7 @@ a:active{ color: #F93; }
     height: 73px;
     position:absolute;
     padding:0;
-    margin: 157px 0px 0px 9px; /* top right bottom left */
+    margin: 115px 0px 0px 9px; /* top right bottom left */
 }
 .aboutLink:hover {  background-position: 0 0; }
 
@@ -76,7 +76,7 @@ a:active{ color: #F93; }
     width: 270px;
     padding:0;
     float:right;
-    margin-top:133px;
+    margin-top:91px;
     margin-right:-5px;
 }
 
@@ -90,28 +90,28 @@ a:active{ color: #F93; }
 #mouseover-twitter{
     height: 56px;
     width: 148px;
-    margin-top:74px;
+    margin-top:32px;
     margin-left:787px;
 }
 
 #mouseover-facebook{
     height: 76px;
     width: 230px;
-    margin-top:53px;
+    margin-top:11px;
     margin-left:785px;
 }
 
 #mouseover-linkedin{
     height: 55px;
     width: 157px;
-    margin-top:74px;
+    margin-top:32px;
     margin-left:827px;
 }
 
 #mouseover-rss{
     height: 67px;
     width: 153px;
-    margin-top:63px;
+    margin-top:21px;
     margin-left:866px;
 }
 
@@ -123,7 +123,7 @@ a:active{ color: #F93; }
     position:absolute;
     padding:0;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 13px;
     margin-left:10px;
 }
 
@@ -415,18 +415,18 @@ a:active{ color: #F93; }
 
 /* note: this actually goes in the header */
 #top_of_sidebar{
-    height: 27px;
+    height: 47px;
     width: 134px;
     padding:0;
     float:right;
     position:absolute;
-    margin-top:17px;
+    margin-top:17px;  /* top of "Hacker" heading */
     margin-left:754px;  /* content width (740) + sidebar_content padding-left (14) */
 }
 
 .sidebar_content{
     position:absolute;  /* without this, the content gets pushed to underneath of the sidebar in IE */
-    padding: 0px 10px 0px 14px; /* top right bottom left */
+    padding: 28px 10px 0px 14px; /* top right bottom left */ /* top padding is to leave room for "Hacker" title which is actually in the Header */
     margin: 0;
     text-align:left;
     line-height:125%;
@@ -442,11 +442,11 @@ a:active{ color: #F93; }
     padding-bottom:5px;
 }
 
-div.facebookiframe {
-	width:283px;	/* set to 2 less then width to hide border */
-	height:390px;   /* set to 2 less then height to hide border, another 25 less to hide "facebook social plugin" footer */
+div.fb-like-box {
+	width:273px;	/* set to 2 less then width to hide border */
+	height:452px;   /* set to 2 less then height to hide border, another 25 less to hide "facebook social plugin" footer */
 	overflow:hidden;
-	margin-left: -12px;
+	margin-left: -5px;
 	margin-bottom:5px;
 }
 

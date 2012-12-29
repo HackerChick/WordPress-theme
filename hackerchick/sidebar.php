@@ -12,7 +12,7 @@
 
     <!-- HACKER CHICK -->
     <div id="hackerchick"></div>
-    <!-- HACKER CHICjK : END -->
+    <!-- HACKER CHICK : END -->
 
     <div class="sidebar_content">
 
@@ -26,10 +26,7 @@
     <div id="hackerchick_spacer"></div>
 
     <!-- FACEBOOK -->
-    <div class="facebookiframe">
-    <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FHackerChickLabs&amp;width=285&amp;connections=0&amp;stream=true&amp;header=false&amp;height=427"
-            scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:285px; height:427px;" allowTransparency="true"></iframe>
-    </div>
+    <div class="fb-like-box" data-href="http://www.facebook.com/HackerChickLabs" data-width="273" data-height="480" data-show-faces="true" data-stream="true" data-border-color="#e7e0d8" data-header="false"></div>    
     <!-- FACEBOOK: END -->
 
     <!-- FAVORITES -->
