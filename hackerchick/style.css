@@ -94,9 +94,9 @@ a:active{ color: #F93; }
 /* BLOG CONTENT */
 .blogcontent_container{
     width:740px;
-    min-height:2240px;
+    min-height:2300px;
     height: auto !important;    /* weird hack for IE */
-    height:2240px;
+    height:2300px;
     padding: 0px;
     margin: 0px; /* top right bottom left */
     text-align: left;
