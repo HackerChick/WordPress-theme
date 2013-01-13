@@ -74,14 +74,23 @@ function CancelDefaultMouseoverDisplay(id){
 <div id="header">
 
    <div class="menu">
-      <a class="menu_item" href="<?php echo get_option('home'); ?>">Blog</a>
+      <a class="menu_item" href="<?php echo get_option('home'); ?>">Home</a>
+      &nbsp;|&nbsp;&nbsp;&nbsp;
+      Topics:
+      <a class="menu_item" href="<?php echo get_option('home'); ?>/category/agile">Agile</a>
+      <a class="menu_item" href="<?php echo get_option('home'); ?>/category/programming">Dev</a>
+      <a class="menu_item" href="<?php echo get_option('home'); ?>/category/startups">Startups</a>
+      <a class="menu_item" href="<?php echo get_option('home'); ?>/category/community">Community/Culture</a>
+      
+
+      &nbsp;|&nbsp;
       <a class="menu_item" href="<?php echo get_option('home'); ?>/about">About</a> 
       <a class="menu_item" href="<?php echo get_option('home'); ?>/resume">Resume</a>
       <a class="menu_item" href="http://www.slideshare.net/HackerChick" target=_new>Presentations</a>
    </div>      
           
     <div id="headerimg">
-        <a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/title.png" width="781" height="85" border="0" alt="The Hacker Chick Blog: Looking at the edge &amp; wondering what's beyond" /></a>
+        <a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/title-top.png" width="781" height="42" border="0" alt="The Hacker Chick Blog" /></a><img src="<?php bloginfo('template_directory'); ?>/images/title-bottom.png" width="781" height="43" border="0" alt="Looking at the edge &amp; wondering what's beyond" />
     </div>
 
 </div>

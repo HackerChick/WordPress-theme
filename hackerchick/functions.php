@@ -54,13 +54,13 @@ function display_favorites( $qty ){
     echo '<div class="favorites">';
     display_favorite( 'Lean Startup 101 for Developers', '2010/10/lean-startup-101-for-devs-presentation.html' );
     display_favorite( 'Kanban is the new Scrum', '2012/01/kanban-is-the-new-scrum.html' );
-    display_favorite( 'Is Deploying to Production 50x/Day a GOOD Idea?', '2011/02/continuous-deployment-for-continuous-learning.html' );
-    display_favorite( 'Agile Vs. Lean', '2012/01/agile-vs-lean-yeah-yeah-whats-the-difference.html' );
+    display_favorite( 'Agile Vs. Lean: Yeah Yeah...', '2012/01/agile-vs-lean-yeah-yeah-whats-the-difference.html' );
     display_favorite( 'Are We Agile Yet?', '2010/02/are-we-agile-yet.html' );
-    display_favorite( 'How to Create a Kick Ass Team', '2010/09/how-to-create-a-kick-ass-team.html' );
+    display_favorite( 'Is Deploying to Production 50x/Day a GOOD Idea?', '2011/02/continuous-deployment-for-continuous-learning.html' );
     display_favorite( 'Be a Rockstar', '2010/12/be-a-rockstar.html' );
     display_favorite( 'Just Do It: A Quick Intro to Agile\'s Technical Practices', '2010/02/just-do-it-quick-intro-to-agiles.html' );
     display_favorite( 'Agile Leadership: Methodology Ain\'t Enough', '2009/09/agile-leadership-methodology-ain-enough.html' );
+    display_favorite( 'WordPress Design: Idea to Photoshop to HTML', '2010/05/wordpress-design-idea-to-photoshop-to-html.html' );
     display_favorite( 'Plane Crashes, Software Failures, and other Human Errors', '2009/05/plane-crashes-software-failures-and.html' );
     echo '</div>';
 }

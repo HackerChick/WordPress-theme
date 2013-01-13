@@ -34,7 +34,7 @@
 	
         <!-- POST -->
 	<div class="post" id="post-<?php the_ID(); ?>">
-	<p class="posttitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
+	<h1 class="posttitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 	<div class="postbody"><?php the_content( ); ?></div>
 
 	<div class="post_spacer"></div>

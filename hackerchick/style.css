@@ -1,10 +1,10 @@
 /*
 Theme Name: HackerChick
-Theme URI: http://TheHackerChickBlog.com/
+Theme URI: http://HackerChick.com/
 Description: The theme for The Hacker Chick Blog
-Version: 1.0
+Version: 2.0
 Author: Abby Fichtner
-Author URI: http://TheHackerChickBlog.com/
+Author URI: http://HackerChick.com/
 Tags: hackerchick
 */
 /* BODY/PAGE */
@@ -67,7 +67,7 @@ a:active{ color: #F93; }
 
 .menu a { color:#068; text-decoration:none;}
 .menu a:visited { color:#068; text-decoration:none;}
-.menu a:hover{ color:#969; text-decoration:underline;}
+.menu a:hover{ color:#068; text-decoration:underline;}
   
 
 #headerimg{
