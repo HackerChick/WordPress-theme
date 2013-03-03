@@ -45,7 +45,7 @@ a:active{ color: #F93; }
 
 /* HEADER */
 #header{
-    height: 115px;
+    height: 121px;
     width: 1024px;
     text-align:left;
     margin:0;
@@ -71,7 +71,7 @@ a:active{ color: #F93; }
   
 
 #headerimg{
-    height:85px;
+    height:104px;
     width:781px;
     position:absolute;
     margin: 0px;
@@ -292,8 +292,8 @@ a:active{ color: #F93; }
 }
 .navOlderLink a{
     display: block;
-    width: 208px;
-    height: 25px;
+    width: 172px;
+    height: 22px;    
     background: url('./images/older.png') bottom;
     text-indent: -99999px;
     float:left;
@@ -305,8 +305,8 @@ a:active{ color: #F93; }
 
 .navNewerLink a{
     display: block;
-    width: 208px;
-    height: 25px;
+    width: 172px;
+    height: 22px;
     background: url('./images/newer.png') bottom;
     text-indent: -99999px;
     float:right;
@@ -318,8 +318,8 @@ a:active{ color: #F93; }
 
 .navHomeLink a{
     display: block;
-    width: 208px;
-    height: 25px;
+    width: 172px;
+    height: 22px;
     background: url('./images/home.png') bottom;
     text-indent: -99999px;
     margin: auto;
