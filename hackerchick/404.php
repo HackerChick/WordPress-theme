@@ -4,8 +4,6 @@
  * @subpackage Hackerchick_Theme
  */
 ?>
-
-<!-- INSERT HEADER -->   
 <?php get_header(); ?>
 
 <!-- ************************************************************************************************************************* -->
@@ -21,6 +19,7 @@
 <div class="blogcontent_container">
 <div class="blogcontent">
 
+<br>
 <h2 class="center">You can't get there from here</h2>
 Some of my links changed when I migrated to WordPress, sorry about that - you might try searching on the blog title here:
 <?php get_search_form(); ?>

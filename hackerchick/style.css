@@ -45,16 +45,25 @@ a:active{ color: #F93; }
 
 /* HEADER */
 #header{
-    height: 121px;
+    height: 98px;
     width: 1024px;
     text-align:left;
     margin:0;
     padding:0;
 }
 
+#persistent-header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 1024px;
+    background-color:#e7e0d8;
+}
+
 .menu{
-    padding: 5px 10px 0px 10px; /* top right bottom left */
-    color:#068;
+    padding: 5px 10px 5px 10px; /* top right bottom left */
+    background: #4e2a3e;
+    color:white;
     font-family:"Arial Black", Gadget, sans-serif;
     font-variant:small-caps;
     font-size:12pt;
@@ -65,17 +74,16 @@ a:active{ color: #F93; }
     padding: 0px 10px 0px 10px; /* top right bottom left */
 }
 
-.menu a { color:#068; text-decoration:none;}
-.menu a:visited { color:#068; text-decoration:none;}
-.menu a:hover{ color:#068; text-decoration:underline;}
+.menu a { color:#FFF; text-decoration:none;}
+.menu a:visited { color:#FFF; text-decoration:none;}
+.menu a:hover{ color:#FFF; text-decoration:underline;}
   
 
 #headerimg{
-    height:104px;
+    height:42px;
     width:781px;
-    position:absolute;
     margin: 0px;
-    padding: 12px 0px 0px 20px; /* top right bottom left */
+    padding: 12px 0px 10px 20px; /* top right bottom left */
 }
 
 /* CONTENT */
@@ -344,6 +352,7 @@ a:active{ color: #F93; }
     width: 284px;
     float: right;
     margin: 0px;
+    margin-top: 5px;
     padding:0px;
     text-align: left;
     display:inline; /* needed for ie issue(float drop bug?) where content from blogcontent repeats in sidebar */

@@ -72,6 +72,14 @@ function CancelDefaultMouseoverDisplay(id){
 <!-- HEADER                                                                                                                    -->
 <!-- ************************************************************************************************************************* -->
 <div id="header">
+ <div id="persistent-header">
+    <div id="headerimg">
+        <a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/title-top.png" width="781" height="42" border="0" alt="The Hacker Chick Blog" /></a>
+<!--
+        <img src="<?php bloginfo('template_directory'); ?>/images/title-bottom.png" width="762" height="54" border="0" alt="Looking at the edge &amp; wondering what's beyond" />
+ -->
+    </div>
+
 
    <div class="menu">
       <a class="menu_item" href="<?php echo get_option('home'); ?>">Home</a>
@@ -88,10 +96,6 @@ function CancelDefaultMouseoverDisplay(id){
       <a class="menu_item" href="<?php echo get_option('home'); ?>/resume">Resume</a>
       <a class="menu_item" href="http://www.slideshare.net/HackerChick" target=_new>Presentations</a>
    </div>      
-          
-    <div id="headerimg">
-        <a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/title-top.png" width="781" height="42" border="0" alt="The Hacker Chick Blog" /></a><img src="<?php bloginfo('template_directory'); ?>/images/title-bottom.png" width="762" height="54" border="0" alt="Looking at the edge &amp; wondering what's beyond" />
-    </div>
-
+  </div>          
 </div>
 <!-- HEADER: END -->
