@@ -9,9 +9,9 @@
 <!-- FOOTER                                                                                                                   -->
 <!-- ************************************************************************************************************************* -->
 <div id="footer">
-<div class="footer_container">
-    
-    <!-- CC LICENSE -->
+  <div class="footer_container">
+
+   <!-- CC LICENSE -->
     <center>
     <div class="item" id="cc_license">
     <p>Information wants to be free. The Hacker Chick Blog by <a href="http://HackerChick.com">Abby Fichtner</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/" target="_blank">Creative Commons Attribution-Noncommercial Shake Alike 3.0 Lience</a>.
