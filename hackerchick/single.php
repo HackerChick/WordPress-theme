@@ -36,12 +36,14 @@
 	<div class="postbody"><?php the_content( ); ?></div>
 
 	<div class="post_spacer"></div>
-	<p class="postmetadata" id="single"><?php the_tags('Tags: ', ', ', ' | '); ?> <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?><br/>
+        <!-- Comments OFF -->
+	<p class="postmetadata" id="single"><?php the_tags('Tags: ', ', ', ' '); ?> <?php edit_post_link('Edit', '', ' '); ?> <?php /* comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); */ ?> <br/>
 	Posted <?php the_time('l, F jS, Y') ?>  under <?php the_category(', ') ?>.</p>
 	</div>
 	<!-- POST: END -->
 
-	<?php comments_template(); ?>
+<!-- Comments OFF -->
+        <?php /* comments_template(); */ ?>
 
 	<!-- POST NAVIGATION -->
 	<table class="postNavigation" cellspacing="0" cellpadding="0" border="0" width="98%" height="20px">

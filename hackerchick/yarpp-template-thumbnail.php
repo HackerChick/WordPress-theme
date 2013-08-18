@@ -7,7 +7,7 @@ Author: Zach Dunn (www.buildinternet.com)
 <br />
 
 <?php if ($related_query->have_posts()):?>
-<div class="subtitle">You Might Also Like...</div>
+<div class="related_posts_header">You Might Also Like...</div>
 
     <table border="0" cellspacing="5"><tr>
     <?php while ($related_query->have_posts()) : $related_query->the_post(); ?>
