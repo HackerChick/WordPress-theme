@@ -166,10 +166,10 @@ a:active{ color: #F93; }
 
 .posttitle a { color:#068; text-decoration:none;}
 .posttitle a:visited { color:#068; text-decoration:none;}
-.posttitle a:hover{ color:#969; text-decoration:underline;}
+.posttitle a:hover{ color:#969; text-decoration:none;}
 .teaser_header a { color:#068; text-decoration:none;}
 .teaser_header a:visited { color:#068; text-decoration:none;}
-.teaser_header a:hover{ color:#969; text-decoration:underline; }
+.teaser_header a:hover{ color:#969; text-decoration:none; }
 
 .postbody{
     line-height:140%;
@@ -249,10 +249,11 @@ a:active{ color: #F93; }
 /* this is very slightly cut off in Firefox, but good in IE & Chrome.  If I make any bigger (or make line-height smaller)
    you can see into the next line in chrome */
 .postbody_teaser{
-    line-height:124%;
-    height:80px;
+    line-height:1.2em;
+    height: 6em;
     overflow:hidden;
     margin-bottom:4px;
+    text-align:justify;
 }
 
 .postbody_teaser p{
