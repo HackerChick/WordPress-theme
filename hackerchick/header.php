@@ -90,12 +90,13 @@ function CancelDefaultMouseoverDisplay(id){
       <a class="menu_item" href="<?php echo get_option('home'); ?>/category/programming">Dev</a>
       <a class="menu_item" href="<?php echo get_option('home'); ?>/category/startups">Startups</a>
       <a class="menu_item" href="<?php echo get_option('home'); ?>/category/community">Community/Culture</a>
+      <a class="menu_item" href="<?php echo get_option('home'); ?>/tag/just-do-it">Just Do It</a>
       
+      &nbsp;|&nbsp;
+      <a class="menu_item" href="http://www.slideshare.net/HackerChick" target=_new>Presentations</a>
 
       &nbsp;|&nbsp;
       <a class="menu_item" href="<?php echo get_option('home'); ?>/about">About</a> 
-      <a class="menu_item" href="<?php echo get_option('home'); ?>/resume">Resume</a>
-      <a class="menu_item" href="http://www.slideshare.net/HackerChick" target=_new>Presentations</a>
    </div>      
   </div>          
 </div>
