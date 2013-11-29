@@ -642,5 +642,12 @@ div.facebookiframe iframe {
 
 .codeHighlight{
 	font-family:"Courier New", Courier, monospace
-    color:#068;
+  color:#068;
+}
+
+.callout{
+    text-align: center;
+    font-size:16pt;
+    line-height: 1.25;
+    padding: .75em;
 }
