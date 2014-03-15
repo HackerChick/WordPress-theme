@@ -27,6 +27,15 @@ function display_upcoming_event( $date, $event, $url, $description){
 }
 
 add_theme_support( 'post-thumbnails' );
+if (class_exists('MultiPostThumbnails')) {
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Secondary Image',
+            'id' => 'secondary-image',
+            'post_type' => 'post'
+        )
+    );
+}
 
 function is_even($number) {
   return !($number & 1);
