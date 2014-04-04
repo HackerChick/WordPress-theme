@@ -4,100 +4,101 @@
  * @subpackage Hackerchick_Theme
  */
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 
 <head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+  <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+  <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />  
 
-<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css' />
 
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
-<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/grid.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
-<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+  <!-- JavaScript -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
 
-<?php wp_head(); ?>
+  <!-- News Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
+  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
+  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<script language="Javascript">
-<!--
-var timer = null;
+  <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
-function ShowPicture(id) {
-    CancelDefaultMouseoverDisplay(id);
-    
-    if (document.layers) document.layers[''+id+''].visibility = "show";
-    else if (document.all) document.all[''+id+''].style.visibility = "visible";
-    else if (document.getElementById) document.getElementById(''+id+'').style.visibility = "visible";
-}
-
-function HidePicture(id) {
-    if (document.layers) document.layers[''+id+''].visibility = "hide";
-    else if (document.all) document.all[''+id+''].style.visibility = "hidden";
-    else if (document.getElementById) document.getElementById(''+id+'').style.visibility = "hidden";
-
-    try{
-        if( id != 'mouseover-default' ) timer = setTimeout("ShowPicture( 'mouseover-default' )", 2000 );
-    }catch (error){}
-}
-
-function CancelDefaultMouseoverDisplay(id){
-    clearTimeout( timer );
-    try{
-	if( id != 'mouseover-default' ) HidePicture( 'mouseover-default' );
-    }catch (error){}
-}
-
-//-->
-</script>
-
+  <?php wp_head(); /* required just before closing </head> */ ?>
 </head>
-<body>
-<!-- Facebook Like Box plugin -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- end Facebook Like Box plugin -->
 
+<body>
 <div id="page">
 
+<!-- Mobile Menu -->
+<div id="mobile-menu">
+  <form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>/" accept-charset="utf-8">
+    <input id="mobile-menu-search" name="s" title="Enter the terms you wish to search for." type="text" value="" size="15" maxlength="128" />
+    <input type="submit" id="searchsubmit" value="Go!" style="display: none;"/>
+  </form>
+  <ul class="mobile-menu-items">
+    <li><a href="<?php echo home_url(); ?>/category/Technology">Technology</a></li>
+    <li><a href="<?php echo home_url(); ?>/category/Inspiration">Inspiration</a></li>
+    <li><a href="<?php echo home_url(); ?>/category/Community">Community</a></li>
+    <li><hr /></li>
+    <li><a href="<?php echo home_url(); ?>/Social">Social</a></li>
+    <li><a href="<?php echo home_url(); ?>/About">About</a></li>
+    <li><a href="<?php echo home_url(); ?>/Speaking">Speaking</a></li>
+    <li><a href="<?php echo home_url(); ?>/HireAbby">Hire Abby</a></li>
+  </ul>
+</div>
+
+<!-- Topics Menu Dropdown -->
+<div id="dropdown-menu">
+  <ul class="dropdown-menu-items menu-items">
+    <li><a href="<?php echo home_url(); ?>/category/technology">Technology</a></li>
+    <li><a href="<?php echo home_url(); ?>/category/inspiration">Inspiration</a></li>
+    <li><a href="<?php echo home_url(); ?>/category/community">Community</a></li>
+  </ul>
+</div>
+
+<!-- SITE CONTAINER is everything that gets pushed to the side when the mobile menu is opened -->
+<div id="sitecontainer">
+
+ 
 <!-- ************************************************************************************************************************* -->
 <!-- HEADER                                                                                                                    -->
 <!-- ************************************************************************************************************************* -->
 <div id="header">
- <div id="persistent-header">
-    <div id="headerimg">
-        <a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/title-top.png" width="781" height="42" border="0" alt="The Hacker Chick Blog" /></a>
+  <div class="header-titlebar group">
+    <a href="#" id="header-mobile-menu-button"><img src="<?php bloginfo('template_directory'); ?>/imgs/mobile-menu.png" alt="menu" /></a>
+    <a href="<?php echo home_url(); ?>"><div class="header-title"></div></a>    
+    <div class="menu">
+      <form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>/" accept-charset="utf-8">
+        <a href="#" id="menu-search"></a>
+        <input id="menu-search-field"  name="s" title="Enter the terms you wish to search for." type="text" value="" size="15" maxlength="128" />
+        <input type="submit" id="searchsubmit" value="Go!" style="display: none;"/>
+      </form>
+      <ul class="nav-menu-items menu-items">
+        <li><a href="#" id="topics-dropdown-menu">Topics</a></li>
+        <li><a href="<?php echo home_url(); ?>/Social">Social</a></li>
+        <li><a href="<?php echo home_url(); ?>/About">About</a></li>
+        <li><a href="<?php echo home_url(); ?>/Speaking">Speaking</a></li>
+        <li><a href="<?php echo home_url(); ?>/HireAbby">Hire Abby</a></li>
+      </ul>
     </div>
-<div id="tagline">
-    <img src="<?php bloginfo('template_directory'); ?>/images/tagline.png" width="378" height="31" border="0" alt="Looking at the edge &amp; wondering what's beyond" />
+  </div>
+  
+  <div class="header-spacer"></div>  
+  <div class="header-titlebar-bottomwhitespace"></div>
+
+  <?php if(!is_single()) { ?>
+    <div class="header-bar group">
+      <div class="header-hackerchick"></div> 
+      <div class="header-symbols"></div>
+    </div>
+  <? } ?>
 </div>
-
-
-
-   <div class="menu">
-      <a class="menu_item" href="<?php echo get_option('home'); ?>">Home</a>
-      &nbsp;|&nbsp;&nbsp;&nbsp;
-      Topics:
-      <a class="menu_item" href="<?php echo get_option('home'); ?>/category/agile">Agile</a>
-      <a class="menu_item" href="<?php echo get_option('home'); ?>/category/programming">Dev</a>
-      <a class="menu_item" href="<?php echo get_option('home'); ?>/category/startups">Startups</a>
-      <a class="menu_item" href="<?php echo get_option('home'); ?>/category/community">Community/Culture</a>
-      <a class="menu_item" href="<?php echo get_option('home'); ?>/tag/just-do-it">Just Do It</a>
-      
-      &nbsp;|&nbsp;
-      <a class="menu_item" href="http://www.slideshare.net/HackerChick" target=_new>Presentations</a>
-
-      &nbsp;|&nbsp;
-      <a class="menu_item" href="<?php echo get_option('home'); ?>/about">About</a> 
-   </div>      
-  </div>          
-</div>
-<!-- HEADER: END -->
+<!-- *************************************************** END HEADER ********************************************************** -->

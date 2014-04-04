@@ -6,27 +6,19 @@ Author: Zach Dunn (www.buildinternet.com)
 
 <br />
 
+<p class="more-articles">
 <?php if ($related_query->have_posts()):?>
-<div class="related_posts_header">You Might Also Like...</div>
-
-    <table border="0" cellspacing="5"><tr>
+  More articles about: <?php the_tags('', ' | ', ' '); ?> under <?php the_category(', ') ?>:</p>
+  <ul>
     <?php while ($related_query->have_posts()) : $related_query->the_post(); ?>
-        <td valign="top" width="155"><a href="<?php the_permalink() ?>" rel="bookmark"> 
-
-	<?php if ( has_post_thumbnail() ) { ?>
-	  <?php $image_id = get_post_thumbnail_id();  $thumbnail_url = wp_get_attachment_image_src($image_id, 'medium'); ?>
-	  <img  border="0" src="<?php echo $thumbnail_url[0] ?>" width="150" height="50" alt="<?php the_title(); ?>">
-	<?php } else { ?>
-	  <img border="0" src="<?php bloginfo('template_directory'); ?>/images/default-thumbnail.jpg" width="150" height="50" alt="<?php the_title(); ?>">
-	<?php } ?>
-	<br />
-	<div class="relatedPostTitles"><?php the_title(); ?></div></a>
-        </td>
+      <li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></li>
     <?php endwhile; ?>
-    </table>
-    
+  </ul>
 <?php else: ?>
 
-<!-- no related posts found -->
+  <!-- no related posts found -->
+  Tags: <?php the_tags('', ' | ', ' '); ?> under <?php the_category(', ') ?>
 
-<?php endif; ?>
+  <?php endif; ?>
+
+</p>

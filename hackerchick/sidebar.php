@@ -6,81 +6,31 @@
 ?>
 
 <!-- ************************************************************************************************************************* -->
-<!-- SIDEBAR                                                                                                                  -->
+<!-- SIDEBAR                                                                                                                   -->
 <!-- ************************************************************************************************************************* -->
-<div id="sidebar">
+<div id="sidebar" class="grid_2 omega">
 
-    <!-- HACKER CHICK -->
-    <div id="hackerchick"></div>
-    <!-- HACKER CHICK : END -->
+  <!-- Follow Abby/Social Media -->
+  <h2>FOLLOW ABBY</h2>
+  <div class="social-media">
+    <a href="http://twitter.com/HackerChick" target="_new"><img class="twitter-icon" src="<?php bloginfo('template_directory'); ?>/imgs/twitter.png" alt="Twitter" /></a>
+    <a href="http://facebook.com/HackerChickLabs" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/facebook.png" alt="Facebook" /></a>
+    <a href="http://www.linkedin.com/in/abbyfichtner" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/linkedin.png" alt="LinkedIn" /></a>
+    <a href="http://feeds.feedburner.com/TheHackerChickBlog" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/rss.png" alt="RSS" /></a>
+  </div>
 
-    <div class="sidebar_content">
+  <!-- Bio -->
+  <div class="bio">
+    <p><strong>Abby Fichtner</strong> helps people build amazing technology and push the edge on what's possible.</p>
 
-    <!-- HACKER -->
-    <div class="item">
-    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/hacker.png" width="134" height="27" alt="hacker"/>
-    <p>Someone who thinks outside the box. Someone who discards conventional wisdom and does something else instead. Someone who looks at the edge and wonders what's beyond. Someone who sees a set of rules and wonders what happens if you don't follow them. <font size="-1"><em>- Bruce Schneier</em></font></p>
-    </div>
-    <!-- HACKER: END -->
+    <p>She's been named an 
+    Innovation Amplifier by the Boston Globe and one of the Top 25 Women in Boston Tech.</p>
 
-    <div id="hackerchick_spacer"></div>
+    <p>Abby is Hacker in Residence for Harvard Innovation Lab, creator of Hack Boston, advisor for the SXSW Accelerator and launcher of Boston's Big Data Hacker Space.</p>
 
-           
-    <!-- SOCIAL MEDIA LINKS -->
-    <div class="mouseover-hint" id="mouseover-twitter"><img src="<?php bloginfo('template_directory'); ?>/images/follow-me.png" width="148" height="56"></div>
-    <div class="mouseover-hint" id="mouseover-facebook"><img src="<?php bloginfo('template_directory'); ?>/images/share-on-facebook.png" width="230" height="76"></div>
-    <div class="mouseover-hint" id="mouseover-linkedin"><img src="<?php bloginfo('template_directory'); ?>/images/see-connected.png" width="157" height="55"></div>
-    <div class="mouseover-hint" id="mouseover-rss"><img src="<?php bloginfo('template_directory'); ?>/images/subscribe.png" width="153" height="67"></div>
-    
-    <center><div id="top_links">
-        <a href="http://www.twitter.com/HackerChick" target="_blank" onmouseover="ShowPicture('mouseover-twitter')" onmouseout="HidePicture('mouseover-twitter')"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png" width="60" height="56" border="0" alt="Follow The Hacker Chick on Twitter" /></a>
-        <a href="http://www.facebook.com/HackerChickLabs" target="_blank" onmouseover="ShowPicture('mouseover-facebook')" onmouseout="HidePicture('mouseover-facebook')"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.png" width="60" height="56" border="0" alt="Share how you're pushing the edge on Hacker Chick Labs" /></a>
-        <a href="http://www.linkedin.com/in/abbyfichtner" target="_blank" onmouseover="ShowPicture('mouseover-linkedin')" onmouseout="HidePicture('mouseover-linkedin')"><img src="<?php bloginfo('template_directory'); ?>/images/linkedin.png" width="60" height="56" border="0" alt="See how we're connected on LinkedIn" /></a>
-        <a href="http://feeds.feedburner.com/TheHackerChickBlog" target="_blank" onmouseover="ShowPicture('mouseover-rss')" onmouseout="HidePicture('mouseover-rss')"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png" width="60" height="56" border="0" alt="Subscribe to The Hacker Chick Blog" /></a>
-    </div></center>
+    <p>She's worked with hundreds of tech startups and taught workshops for MIT, Harvard, Microsoft, TechStars...</p>
+    <p><a href="About">Learn More</a></p>
+  </div>
 
-    <div style="clear: both;"></div> 
-
-    
-    <!-- FACEBOOK -->
-    <div class="fb-like-box" data-href="http://www.facebook.com/HackerChickLabs" data-width="273" data-height="480" data-show-faces="true" data-stream="true" data-border-color="#e7e0d8" data-header="false"></div>    
-    <!-- FACEBOOK: END -->
-
-    <!-- FAVORITES -->
-    <div class="item">
-    <p><img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/favorites.png" width="176" height="27" alt="Favorites"/>       
-    <?php display_favorites( 10 ); ?></p>
-    </div>
-    <!-- FAVORITES: END -->
-
-    <!-- TAGS -->
-    <div class="item">
-    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/topics.png" width="125" height="27" alt="topics"/>
-
-    <p class="tagCloud"><?php wp_tag_cloud( array('smallest' => 8, 'largest' => '16' ) ); ?></p>
-    </div>
-    <!-- TAGS: END -->
-
-    <!-- SEARCH -->
-    <div class="item">
-    <img class="sidebar_header_image" src="<?php bloginfo('template_directory'); ?>/images/search.png" width="136" height="28" alt="search"/>
-    <?php get_search_form(); ?>
-    </div>
-    <!-- SEARCH: END -->
-    
-
-    <!-- BADGES -->
-    <div class="item" id="badges">
-    <div id="badge-topblogs"><a href="http://agilescout.com/top-agile-blogs-200/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/agile-top-200-blogs.png" width="100" height="94" alt="Top 200 Agile Blogs" border="0"/></a></div>
-    <div id="badge-topwomen"><a href="http://agilescout.com/woman-in-leadership-top-women-in-agile-thought-leadership//" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/agile-top-woman-list.png" width="100" height="100" alt="Top Women in Agile" border="0"/></a></div>
-    <div id="badge-geekgirl"><a href="http://www.geekgirlblogs.com/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-geekgirlblogs.png" width="142" height="50" alt="Geek Girl Blogs" border="0"/></a></div>
-    <div id="badge-devchix"><a href="http://www.devchix.com/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-devchix.png" width="69" height="75" alt="DevChix" border="0"/></a></div>
-    <div id="badge-bbw"><a href="http://www.blogsbywomen.org/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-blogsbywomen.png" width="80" height="15" alt="Blogs by Women" border="0"/></a></div>
-    <div id="badge-agile13"><a href="http://agile2013.sched.org/event/22e6dc7d30beba4ce85874e6839bd6e2#.UYaPpDRwp8E" title="So You Want to Do a Startup!" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/badge-agile2013.png" width="150" height="86" alt="Agile 2013" border="0"/></a></div>
-    </div>
-    <!-- BADGES: END -->
-
-
-    
-</div></div>
-<!-- SIDEBAR: END -->
+</div>
+<!-- *************************************************** END SIDEBAR ********************************************************* -->

@@ -11,37 +11,37 @@
 <!-- ************************************************************************************************************************* -->
 <div id="content">
 
-<?php get_sidebar(); ?>
 
 <!-- ************************************************************************************************************************* -->
 <!-- BLOG CONTENT                                                                                                              -->
 <!-- ************************************************************************************************************************* -->     
-<div class="blogcontent_container">
-<div class="pagecontent">
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="post" id="post-<?php the_ID(); ?>">
+      <h1 class="title page"><?php the_title(); ?></h1>
+      <div class="postbody"><?php the_content( ); ?></div>
+    </div>
 
-        <!-- space first post down so it aligns with pages (internal pages have navigation up top) -->
-        <div id="postNavigation_spacer"></div>
+    <!-- Social Media Footer -->
+    <div class="about-footer">
+    <hr><br />
+    <center>  
+    <span class="about-footer-social-media">
+        <a href="http://twitter.com/HackerChick" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/twitter.png" alt="Twitter" /></a>
+        <a href="http://facebook.com/HackerChickLabs" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/facebook.png" alt="Facebook" /></a>
+        <a href="http://www.linkedin.com/in/abbyfichtner" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/linkedin.png" alt="LinkedIn" /></a>
+        <a href="http://feeds.feedburner.com/TheHackerChickBlog" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/email.png" alt="Email" /></a>
+        </span>
+    </center>
+    </div>
 
-        <!-- POST -->
-	<div class="post" id="post-<?php the_ID(); ?>">
-	<p class="posttitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
-	<div class="postbody"><?php the_content( ); ?></div>
-	</div>
-	<!-- POST: END -->
-
-	<?php endwhile; else: ?>
-	<p>Sorry, no posts matched your criteria.</p>
-
-    <?php endif; ?>
+  <?php endwhile; else: ?>
+    <p>Sorry, no posts matched your criteria.</p>
+  <?php endif; ?>
     
-</div></div>
-<!-- BLOG CONTENT: END -->
 
 </div>
-<div style="clear: both;"></div> 
-<!-- CONTENT: END -->
+<!-- *************************************************** END CONTENT ********************************************************* -->
 
 <!-- INSERT FOOTER -->   
 <?php get_footer(); ?>

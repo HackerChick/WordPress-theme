@@ -9,114 +9,111 @@
 <!-- ************************************************************************************************************************* -->
 <!-- CONTENT                                                                                                                   -->
 <!-- ************************************************************************************************************************* -->
-<div id="content">
+<div id="content" class="grid-container group">
 
-<?php get_sidebar(); ?>
+  <!-- DISPLAY TOPICS OR NAME THE RESUTLS BEING DISPLAYED -->
+  <div class="topics grid_6">
+  <center>  
 
-<!-- ************************************************************************************************************************* -->
-<!-- BLOG CONTENT                                                                                                              -->
-<!-- ************************************************************************************************************************* -->     
-<div class="blogcontent_container">
-<div class="blogcontent">
-        
-    <!-- DISPLAYING FOR... -->
-    <?php if ( is_search() || is_category() || is_tag() ) { ?>
-    <div id="displayingFor">
-    <?php if (is_search()) { ?>
-    <p>Displaying search results for: <strong><?php the_search_query(); ?></strong></a></p>
-    <?php } elseif (is_category() ) { ?>
-    <p>Displaying posts in category: <strong><?php single_cat_title(''); ?></strong></p>
-    <?php } elseif (is_tag() ) { ?>
-    <p>Displaying posts with tag: <strong><?php single_cat_title(''); ?></strong></p>
-    <?php } ?>
-    <font size=-1>[<a href="<?php echo get_option('home'); ?>">Display All Posts</a>]</font>
-    </div>
-    <?php } ?>
-    <!-- DISPLAYING FOR... (END) -->
+    <?php /* If Filtered Results, Display Filter Criteria */
+    if ( is_search() || is_category() || is_tag() ) { ?>
+          
+       <div class="topic-box single">
+         <div class="topic">
+           <h3>
+             <?php if (is_search()) { ?>Results for <?php the_search_query(); ?>
+             <?php }           else {   single_cat_title(''); /* single_cat_title() will return category OR tag name */ } ?>
+           </h3>
 
+        </div>
+      </div>
+
+    <?php } else { /* Otherwise, display the topics across the top */ ?>
     
-    <?php if (have_posts()) : ?>
+      <div class="topic-box">
+        <a href="<?php echo home_url(); ?>/category/Technology"><div class="topic">
+          <h3>Technology</h3>
+          <p>Push the edge</p>
+        </div></a>
+      </div>
+      <div class="topic-box">
+        <a href="<?php echo home_url(); ?>/category/Inspiration"><div class="topic">
+          <h3>Inspiration</h3>
+          <p>Change the world</p>
+        </div></a>
+      </div>
+      <div class="topic-box last">
+        <a href="<?php echo home_url(); ?>/category/Community"><div class="topic">
+          <h3>Community</h3>
+          <p>Foster innovation</p>
+        </div></a>
+      </div>
 
-        <!-- space first post down so it aligns when you click into it (internal pages have navigation up top) -->
-        <div id="postNavigation_spacer"></div>
+    <?php } ?>
+  
+  </center>
+  </div> <!-- END TOPICS OR NAME THE RESULTS BEING DISPLAYED -->
 
-        <?php $count = 0; ?>
-        <?php $teaserCount = 0; ?>
-	<?php while (have_posts()) : the_post(); ?>
-	    <?php $count++; ?>
-	    
-	    <!-- DISPLAY LARGE PREVIEWS -->
-	    <?php if( $count <= 4 ) { ?>
-                <!-- POST -->
-		<div class="post">
-		<p class="posttitle"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
-		<div class="postbody"><?php the_content('<span class="readmoretext">Read More.....</span>'); ?></div>
-                <!-- Comments OFF -->
-		<p class="postmetadata"><?php the_tags('Tags: ', ', ', ' '); ?> <?php edit_post_link('Edit', '', ' '); ?>  <?php /* comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); */ ?></p>
-		</div>
-		<!-- POST: END -->
+  <?php get_sidebar(); ?>
 
-            <!-- DISPLAY SMALL TEASERS -->
-	    <?php } else { ?>
-	        <?php $teaserCount++; ?>
-	        
-		<!-- POST TEASER -->
-	        <div class="post_teaser" id="<?php echo is_even($teaserCount) ? 'even' : 'odd' ?>">
+  <!-- ************************************************************************************************************************* -->
+  <!-- TEASERS                                                                                                                   -->
+  <!-- ************************************************************************************************************************* -->     
+  <?php if (have_posts()) { ?>
+    <?php $count = 0; ?>
 
-		<div class="teaser_header">
-		<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
-		<p class="posttitle_teaser"><?php the_title(); ?></p>
-		<?php if ( has_post_thumbnail() ) { ?>
-		<?php the_post_thumbnail( 'full', array('class' => 'postimage_teaser', 'border' => '0' ) ); ?>
-		<?php } else { ?>
-		<img class="postimage_teaser" border="0" src="<?php bloginfo('template_directory'); ?>/images/default-thumbnail.jpg">
-		<?php } ?>
-		</a></div>
-	     
-		<div class="postbody_teaser"><?php the_excerpt(); ?></div>
-		<div class="postteaser_spacer"></div>
-		<a href="<?php the_permalink() ?>"><span class="readmoretext_teaser">Read More.....</span></a>
-		<p class="postmetadata"><?php the_tags('Tags: ', ', ', ' | '); ?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
-
-		</div>
-		<!-- POST TEASER: END -->
-
-		<?php if( is_even($teaserCount) ) { ?>
-		<div style="clear: both;"></div> 
-		<?php } ?>
-
-	    <?php } ?>
-	    
-	<?php endwhile; ?>
-
-    <div style="clear: both;"></div> 
-
-
-    <!-- Page Navigation -->
-    <div style="clear: both;"></div> 
-    <div class="pageNavigation">
-    <div class="navOlderLink"><?php next_posts_link('&nbsp;') ?></div>
-    <div class="navNewerLink"><?php previous_posts_link('&nbsp;') ?></div>
-    <div class="navHomeLink"><a href="<?php echo get_option('home'); ?>">&nbsp;</a></div>
+    <div class="teasers">
+    <?php while (have_posts()) : the_post(); ?>
+      <?php $count++; ?>
+        <div class="teaser grid_3 <?php if( is_even($count) ){ echo 'omega-short'; } ?>">
+          <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>">
+            <div class="teaser-image">
+              <?php if ( has_post_thumbnail() ) { ?><?php the_post_thumbnail( 'full' ); ?>
+              <?php } else { ?><img src="<?php bloginfo('template_directory'); ?>/imgs/default-teaser-image.jpg"><?php } ?>
+            </div>
+            <h3 class="teaser-headline"><?php the_title(); ?></h3>
+          </a>
+          <?php the_excerpt(); ?>
+        </div>
+    <?php endwhile; ?>
     </div>
-    <div style="clear: both;"></div> 
-    <!-- Page Navigation: END -->
 
+    <!-- NAVIGATION -->
+    <div class="navigation grid_6">
+      <div id="navigation-older"><?php next_posts_link('Older') ?></div>
+      <a href="#"><div id="navigation-newer"><?php previous_posts_link('Newer') ?></div></a>
+    </div> 
 
+  <?php } else { ?>
     <!-- NO POSTS FOUND -->
-    <?php else : ?>
-	<h2 class="center">No Posts Found</h2>
-	<?php get_search_form(); ?>
-    <?php endif; ?>
-    <!-- NO POSTS FOUND (END)-->
+    <h2 class="center">No Posts Found</h2>
+    <?php get_search_form(); ?>
+  <?php } ?>
+  <!-- *************************************************** END TEASERS ********************************************************* -->
+  
 
-    
-</div></div>
-<!-- BLOG CONTENT: END -->
-
+  <!-- BOTTOM BAR (for narrow screens) -->
+  <div class="bottom-bar">
+    <!-- About Footer -->
+    <div class="about-footer grid_8">
+      <hr />
+      <p><strong><a href="about.html">Abby Fichtner</a></strong> helps people build amazing technology and push the edge on what's possible. Hacker in Residence for Harvard Innovation Lab and creator of Hack Boston, Abby has been named one of the Top 25 Women in Boston Tech.
+      <br/>
+      <center>  
+        <span class="about-footer-social-media">
+          <a href="http://twitter.com/HackerChick" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/twitter.png" alt="Twitter" /></a>
+          <a href="http://facebook.com/HackerChickLabs" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/facebook.png" alt="Facebook" /></a>
+          <a href="http://www.linkedin.com/in/abbyfichtner" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/linkedin.png" alt="LinkedIn" /></a>
+          <a href="http://feeds.feedburner.com/TheHackerChickBlog" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/rss.png" alt="RSS" /></a>
+        </span>
+      </center>
+      </p>    
+    </div>
+  </div>
+  <!-- END BOTTOM BAR -->
 </div>
-<div style="clear: both;"></div> 
-<!-- CONTENT: END -->
+<!-- *************************************************** END CONTENT ********************************************************* -->
 
 <!-- INSERT FOOTER -->   
 <?php get_footer(); ?>
+
