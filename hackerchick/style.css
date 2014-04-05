@@ -387,6 +387,7 @@ a:hover{
 }
 
 .teaser img{
+    /* force image to resize based on max-width available */
     width: 99%;  /* need a pixel for the border */
     height: auto;
     margin: 0;
@@ -558,10 +559,10 @@ a:hover{
     padding-left: .3em;
 }
 
-.post img{
+.postbody img{
     /* force image to resize based on max-width available */
     max-width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 /* ------------------------------------
@@ -684,18 +685,21 @@ h1.ss-form-title { display: none; }
 
 /* ------------------------------------
    Responsive Design
+   Media queries
    ------------------------------------ */
 /*************** HEIGHT *****************/
 @media screen and (max-height: 768px){
-  /* shift cover image up a little */
+  /* shrink cover image a little */
   .post-cover-image img{
-      margin-top: -10%;
+      margin-bottom: -5%;
+      margin-top: -5%;
   }
 }
 @media screen and (max-height: 650px){
-  /* shift cover image up a little */
+  /* shrink cover image a little more */
   .post-cover-image img{
-      margin-top: -15%;
+      margin-bottom: -7.5%;
+      margin-top: -7.5%;
   }
 }
 @media screen and (max-height: 350px){
