@@ -97,7 +97,7 @@
     <!-- About Footer -->
     <div class="about-footer grid_8">
       <hr />
-      <p><strong><a href="about.html">Abby Fichtner</a></strong> helps people build amazing technology and push the edge on what's possible. Hacker in Residence for Harvard Innovation Lab and creator of Hack Boston, Abby has been named one of the Top 25 Women in Boston Tech.
+      <p><strong><a href="<?php echo home_url(); ?>/About">Abby Fichtner</a></strong> helps people build amazing technology and push the edge on what's possible. Hacker in Residence for Harvard Innovation Lab and creator of Hack Boston, Abby has been named one of the Top 25 Women in Boston Tech.
       <br/>
       <center>  
         <span class="about-footer-social-media">

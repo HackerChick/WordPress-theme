@@ -12,6 +12,8 @@
   <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />  
 
+  <link rel="shortcut icon" href="<?php echo home_url(); ?>/favicon.ico?v=3" type="image/x-icon" />
+  
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css' />
 
@@ -51,7 +53,7 @@
     <li><a href="<?php echo home_url(); ?>/Social">Social</a></li>
     <li><a href="<?php echo home_url(); ?>/About">About</a></li>
     <li><a href="<?php echo home_url(); ?>/Speaking">Speaking</a></li>
-    <li><a href="<?php echo home_url(); ?>/HireAbby">Hire Abby</a></li>
+    <li><a href="<?php echo home_url(); ?>/Contact">Hire Abby</a></li>
   </ul>
 </div>
 
@@ -86,7 +88,7 @@
         <li><a href="<?php echo home_url(); ?>/Social">Social</a></li>
         <li><a href="<?php echo home_url(); ?>/About">About</a></li>
         <li><a href="<?php echo home_url(); ?>/Speaking">Speaking</a></li>
-        <li><a href="<?php echo home_url(); ?>/HireAbby">Hire Abby</a></li>
+        <li><a href="<?php echo home_url(); ?>/Contact">Hire Abby</a></li>
       </ul>
     </div>
   </div>

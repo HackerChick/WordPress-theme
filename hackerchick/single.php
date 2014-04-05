@@ -47,7 +47,7 @@
           <a href="javascript:sharefacebook()"><img src="<?php bloginfo('template_directory'); ?>/imgs/facebook.png" alt="Facebook" title="Share on Facebook" /></a>
           <a href="javascript:sharetwitter()"><img src="<?php bloginfo('template_directory'); ?>/imgs/twitter.png" alt="Twitter" title="Share on Twitter" /></a>
         </span>
-        <span>by <a href="About">Abby Fichtner</a></span>
+        <span>by <a href="<?php echo home_url(); ?>/About">Abby Fichtner</a></span>
       </div>
 
       <div class="postbody"><?php the_content( ); ?></div>
@@ -73,14 +73,14 @@
   <!-- About Footer -->
   <div class="about-footer">
   <hr>
-  <p><strong><a href="About">Abby Fichtner</a></strong> helps people build amazing technology and push the edge on what's possible. Hacker in Residence for Harvard Innovation Lab and creator of Hack Boston, Abby has been named one of the Top 25 Women in Boston Tech.
+  <p><strong><a href="<?php echo home_url(); ?>/About">Abby Fichtner</a></strong> helps people build amazing technology and push the edge on what's possible. Hacker in Residence for Harvard Innovation Lab and creator of Hack Boston, Abby has been named one of the Top 25 Women in Boston Tech.
     <br/>
   <center>  
   <span class="about-footer-social-media">
       <a href="http://twitter.com/HackerChick" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/twitter.png" alt="Twitter" /></a>
       <a href="http://facebook.com/HackerChickLabs" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/facebook.png" alt="Facebook" /></a>
       <a href="http://www.linkedin.com/in/abbyfichtner" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/linkedin.png" alt="LinkedIn" /></a>
-      <a href="http://feeds.feedburner.com/TheHackerChickBlog" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/email.png" alt="Email" /></a>
+      <a href="<?php echo home_url(); ?>/Contact"><img src="<?php bloginfo('template_directory'); ?>/imgs/email.png" alt="Email" /></a>
       </span>
   </center>
   </p>    
@@ -96,7 +96,7 @@
     <ul>
       <li><a href="<?php bloginfo('url'); ?>/2012/01/agile-vs-lean-yeah-yeah-whats-the-difference.html">Agile vs. Lean: Yeah Yeah...</a></li>
       <li><a href="<?php bloginfo('url'); ?>/2012/01/kanban-is-the-new-scrum.html">Kanban is the new Scrum</a></li>
-      <li><a href="<?php bloginfo('url'); ?>2013/02/5-mvp-examples.html">5 Awesome MVP Examples</a></li>
+      <li><a href="<?php bloginfo('url'); ?>/2013/02/5-mvp-examples.html">5 Awesome MVP Examples</a></li>
       <li><a href="<?php bloginfo('url'); ?>/2010/02/are-we-agile-yet.html">Are We Agile Yet?</a></li>
       <li><a href="<?php bloginfo('url'); ?>/2013/01/focus-in-chaos-why-i-like-kanban-for-startups.html">Focus in Chaos: Why I Like Kanban for Startups</a></li>
     </ul>
