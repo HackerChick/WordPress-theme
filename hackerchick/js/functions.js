@@ -90,14 +90,7 @@ function isIncompatibleBrowser(){
   }
 }
 
-/* Social Media Sharing */
-//var pageURL = urlencode("<?php the_permalink(); ?>");
-//var pageTitle = urlencode("<?php the_title(); ?>");
-
-// test URLs
-var pageURL = escape("http://www.hackerchick.com/2013/11/do-one-thing-every-day-that-scares-you.html");
-var pageTitle = escape("Do One Thing Every Day That Scares You");
-
+// Note pageURL & pageTitle set in header.php
 var sharewindowoptions = "toolbar=0, status=0";
 
 function sharetwitter(){

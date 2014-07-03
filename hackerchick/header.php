@@ -24,6 +24,11 @@
 
   <!-- JavaScript -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script>
+    // Used by functions.js for social media sharing, need here for PHP
+    var pageURL = escape("<?php the_permalink(); ?>");
+    var pageTitle = escape("<?php the_title(); ?>");
+  </script>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
 
   <!-- News Feeds -->
