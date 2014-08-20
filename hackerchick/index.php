@@ -33,19 +33,19 @@
       <div class="topic-box">
         <a href="<?php echo home_url(); ?>/category/Technology"><div class="topic">
           <h3>Technology</h3>
-          <p>Push the edge</p>
+          <p>push the edge</p>
         </div></a>
       </div>
       <div class="topic-box">
         <a href="<?php echo home_url(); ?>/category/Inspiration"><div class="topic">
           <h3>Inspiration</h3>
-          <p>Change the world</p>
+          <p>change the world</p>
         </div></a>
       </div>
       <div class="topic-box last">
         <a href="<?php echo home_url(); ?>/category/Community"><div class="topic">
           <h3>Community</h3>
-          <p>Foster innovation</p>
+          <p>foster innovation</p>
         </div></a>
       </div>
 

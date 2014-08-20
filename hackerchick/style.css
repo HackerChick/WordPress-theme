@@ -571,6 +571,12 @@ a:hover{
 ss-form-container{
    width: 100%;
 }
+div.ss-form-entry>input {
+    width: 100%
+}
+div.ss-form-entry>textarea {
+    width: 100%
+}
 h1.ss-form-title { display: none; }
 .ss-required-asterisk{ display: none; }
 
