@@ -282,43 +282,47 @@ a:hover{
 }
 .topic-box.single{
     width: 100%;
-    color: #DF6BD6;
+    color: white;
     height: 3.75em;
 }
 
 .topic{
     height: 80%;
     padding: .3125em .625em;
-    background-color: #555;
+    background-color: #ac3895;
     white-space: nowrap;
 }
 
 .topic h3{
     font-family: 'Oswald',Geneva,Verdana,sans-serif;
+	color: white;
     letter-spacing: .1em;
     font-size:1.3em;
     font-weight: bold;
     font-variant: small-caps;
     margin: 7px 0 0 0;
 }
+.topic-box a:link h3, .topic-box a:visited h3{
+	color: white;
+}
 
 .topic p{
     font-size: .9em;
-    color: #FFF;
+    color: white;
     margin: 0;
 }
-
-.topic-box a:link h3, .topic-box a:visited h3{
-    color: #DF6BD6;
-}
 .topic-box a:link p, .topic-box a:visited p{
-    color: white;
+	color: white;
 }
 
 .topic-box a:hover .topic{
-    background-color: #ac3895;
+    background-color: #555;
 }
-.topic-box a:hover h3, .topic-box a:hover p{
+.topic-box a:hover h3{
+    color: #DF6BD6;
+    text-decoration: none;
+}
+.topic-box a:hover p{
     color: white;
     text-decoration: none;
 }  
