@@ -24,7 +24,7 @@
           <!-- Post Header Image -->
           <img src="<?php echo $coverImageURL; ?>" />
         </div>
-      <? } ?>
+      <?php } ?>
 
     <!-- Title -->
     <div class="post" id="post-<?php the_ID(); ?>">
