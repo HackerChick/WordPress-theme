@@ -79,6 +79,13 @@ $(function(){
 
 });
 
+// convert special html characters like &amp; to normal text
+function decodeHtml(html) {
+  var txt = document.createElement("textarea");
+  txt.innerHTML = html;
+  return txt.value;
+}
+
 /* Browser Compatibility */
 function isIncompatibleBrowser(){
   if(navigator.appName.indexOf("Internet Explorer")!=-1){
@@ -94,7 +101,7 @@ function isIncompatibleBrowser(){
 var sharewindowoptions = "toolbar=0, status=0";
 
 function sharetwitter(){
-  var byHackerChick = escape( " | @HackerChick");
+  var byHackerChick = encodeURI( " | @HackerChick");
   window.open("https://twitter.com/intent/tweet?text=" + pageTitle + byHackerChick + "&url=" + pageURL, "twitter", sharewindowoptions + ", width=900, height=300");
 }
 function sharefacebook(){
