@@ -75,14 +75,14 @@
   <hr>
   <p><strong><a href="<?php echo home_url(); ?>/About">Abby Fichtner</a></strong> helps people build amazing technology and push the edge on what's possible. Hacker in Residence for Harvard Innovation Lab and creator of Hack Boston, Abby has been named one of the Top 25 Women in Boston Tech.
     <br/>
-  <center>  
+  <div style="text-align: center;">
   <span class="about-footer-social-media">
       <a href="http://twitter.com/HackerChick" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/twitter.png" alt="Twitter" /></a>
       <a href="http://facebook.com/HackerChickLabs" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/facebook.png" alt="Facebook" /></a>
       <a href="http://www.linkedin.com/in/abbyfichtner" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/linkedin.png" alt="LinkedIn" /></a>
       <a href="<?php echo home_url(); ?>/Contact"><img src="<?php bloginfo('template_directory'); ?>/imgs/email.png" alt="Email" /></a>
       </span>
-  </center>
+  </div>
   </p>    
   </div>
 

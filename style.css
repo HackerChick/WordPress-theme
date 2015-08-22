@@ -87,7 +87,7 @@ a:hover{
   height: 30px;
   line-height: 30px;
   color: #D24DBF;
-  border: 0px;
+  border: 0;
   outline: none;
   text-align: right;
   font-family: Geneva,Verdana,sans-serif;
@@ -179,12 +179,12 @@ a:hover{
 }
 .dropdown-menu-items li{
     color: #d24dbf;
-    margin: 0 0px 5px 0;
+    margin: 0 0 5px 0;
     border-bottom: 1px black solid;
 }
 .dropdown-menu-items li:last-child{
-    border-bottom: 0px;
-    margin-bottom: 0px;
+    border-bottom: 0;
+    margin-bottom: 0;
 }
 
 
@@ -219,11 +219,11 @@ a:hover{
     height: 11px;   /* height of HC's head extending above the black */
     width: 100%;
     background-color: white;
-    box-shadow: 0px 2px 4px rgba(0,0,0,.6);
+    box-shadow: 0 2px 4px rgba(0,0,0,.6);
     z-index:0; /* position under header */
     position: fixed;
     top: 45px; /* needed for mobile safari */
-    left: 0px; /* needed for mobile safari */
+    left: 0; /* needed for mobile safari */
 }
   
 .header-spacer{
@@ -543,7 +543,6 @@ a:hover{
     height: 1.85em;
     vertical-align: middle;
     margin-top:-.2em;
-    margin-left: -.1em;
     margin-left: .45em;
 }
 
@@ -597,7 +596,7 @@ h1.ss-form-title { display: none; }
 }
 .you-might-also-like ul{
     padding-top: 0.5em;
-    padding-left: 0px;
+    padding-left: 0;
 }
 .you-might-also-like li{
   list-style-position:inside;
@@ -757,7 +756,7 @@ h1.ss-form-title { display: none; }
   .grid_8 {
     margin-right: 5.5004%;
   }
-  .omega-short{ margin-right: 0px; }
+  .omega-short{ margin-right: 0; }
 
   /* display bottom-bar */
   .bottom-bar{

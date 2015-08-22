@@ -13,7 +13,7 @@
 
   <!-- DISPLAY TOPICS OR NAME THE RESUTLS BEING DISPLAYED -->
   <div class="topics grid_6">
-  <center>  
+  <div style="text-align: center;">
 
     <?php /* If Filtered Results, Display Filter Criteria */
     if ( is_search() || is_category() || is_tag() ) { ?>
@@ -51,7 +51,7 @@
 
     <?php } ?>
   
-  </center>
+  </div>
   </div> <!-- END TOPICS OR NAME THE RESULTS BEING DISPLAYED -->
 
   <?php get_sidebar(); ?>
@@ -99,14 +99,14 @@
       <hr />
       <p><strong><a href="<?php echo home_url(); ?>/About">Abby Fichtner</a></strong> helps people build amazing technology and push the edge on what's possible. Hacker in Residence for Harvard Innovation Lab and creator of Hack Boston, Abby has been named one of the Top 25 Women in Boston Tech.
       <br/>
-      <center>  
+      <div style="text-align: center;">
         <span class="about-footer-social-media">
           <a href="http://twitter.com/HackerChick" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/twitter.png" alt="Twitter" /></a>
           <a href="http://facebook.com/HackerChickLabs" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/facebook.png" alt="Facebook" /></a>
           <a href="http://www.linkedin.com/in/abbyfichtner" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/linkedin.png" alt="LinkedIn" /></a>
           <a href="http://feeds.feedburner.com/TheHackerChickBlog" target="_new"><img src="<?php bloginfo('template_directory'); ?>/imgs/rss.png" alt="RSS" /></a>
         </span>
-      </center>
+      </div>
       </p>    
     </div>
   </div>

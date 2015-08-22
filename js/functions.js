@@ -86,17 +86,6 @@ function decodeHtml(html) {
   return txt.value;
 }
 
-/* Browser Compatibility */
-function isIncompatibleBrowser(){
-  if(navigator.appName.indexOf("Internet Explorer")!=-1){
-    var badBrowser=( navigator.appVersion.indexOf("MSIE 9")==-1 &&   //v9 is ok
-                     navigator.appVersion.indexOf("MSIE 1")==-1  //v10, 11, 12, etc. is fine too
-                   );
-
-    return badBrowser;
-  }
-}
-
 // Note pageURL & pageTitle set in header.php
 var sharewindowoptions = "toolbar=0, status=0";
 
